@@ -1,0 +1,34 @@
+[*]
+indent_style = space           # Usar espaços para indentação
+indent_size = 2                # Tamanho da indentação de 2 espaços
+end_of_line = lf               # Usar line feed (LF) para terminar as linhas
+charset = utf-8                # Definir codificação de caracteres como UTF-8
+trim_trailing_whitespace = true # Remover espaços em branco no final das linhas
+insert_final_newline = true    # Inserir uma nova linha no final dos arquivos
+
+# Configurações específicas para arquivos JavaScript
+[*.js]
+indent_size = 2
+
+# Configurações específicas para arquivos HTML e CSS
+[*.html]
+indent_size = 2
+
+[*.css]
+indent_size = 2
+
+# Configurações específicas para arquivos JSON
+[*.json]
+indent_size = 2
+
+# Configurações específicas para arquivos YAML
+[*.yml]
+indent_size = 2
+
+# Configurações específicas para arquivos Markdown
+[*.md]
+trim_trailing_whitespace = false   # Manter espaços em branco no final das linhas
+
+# Configurações específicas para arquivos Makefile
+[Makefile]
+indent_style = tab                # Usar tabulação para indentação
