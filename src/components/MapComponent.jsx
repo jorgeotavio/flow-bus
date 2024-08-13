@@ -9,7 +9,7 @@ const MapComponent = ({ busStops }) => {
   const center = position ? [position.latitude, position.longitude] : [-7.9820696461839695, -38.29091520605652]
 
   return (
-    <MapContainer center={center} zoom={15} style={{ height: '80vh', width: '100%' }}>
+    <MapContainer center={center} zoom={15} style={{ height: '100vh', width: '100vw' }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; OpenStreetMap contributors"
