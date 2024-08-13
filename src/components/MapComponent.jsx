@@ -1,16 +1,21 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import useUserCurrentPosition from '../hooks/useUserCurrentPosition';
 
 const MapComponent = ({ busStops }) => {
+  const position = useUserCurrentPosition()
+
+  const center = position ? [position.latitude, position.longitude] : [-7.9820696461839695, -38.29091520605652]
+
   return (
-    <MapContainer center={[-7.9820696461839695, -38.29091520605652]} zoom={15} style={{ height: '80vh', width: '100%' }}>
+    <MapContainer center={center} zoom={15} style={{ height: '80vh', width: '100%' }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; OpenStreetMap contributors"
       />
-      {busStops.map(stop => (
-        <Marker key={stop.id} position={[stop.latitude, stop.longitude]}>
+      {busStops.map((stop, key) => (
+        <Marker key={key} position={[stop.latitude, stop.longitude]}>
           <Popup>{stop.name}</Popup>
         </Marker>
       ))}

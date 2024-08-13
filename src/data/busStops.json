@@ -1,17 +1,112 @@
 [
   {
-      "name": "Mercantil Santana",
-      "latitude":-7.984788718939922,
-      "longitude": -38.290197428532146
-  },
-  {
-      "name": "Fafopst",
+    "name": "Alto do Bom Jesus",
+    "description": "",
+    "coordenates": {
       "latitude": -7.990347005862955,
       "longitude": -38.29223983639888
+    },
+    "destinations": {
+      "hour": "id"
+    }
   },
   {
-      "name": "Centro",
-      "latitude": -7.991237993685246,
-      "longitude": -38.29830037578256
+    "name": "Centro",
+    "description": "",
+    "coordenates": {
+      "latitude": -7.990347005862955,
+      "longitude": -38.29223983639888
+    },
+    "destinations": {
+      "hour": "id"
+    }
+  },
+  {
+    "name": "Fafopst",
+    "description": "",
+    "coordenates": {
+      "latitude": -7.990347005862955,
+      "longitude": -38.29223983639888
+    },
+    "destinations": {
+      "hour": "id"
+    }
+  },
+  {
+    "name": "Santa",
+    "description": "",
+    "coordenates": {
+      "latitude": -7.990347005862955,
+      "longitude": -38.29223983639888
+    },
+    "destinations": {
+      "hour": "id"
+    }
+  },
+  {
+    "name": "Mercantil Santana",
+    "description": "",
+    "coordenates": {
+      "latitude": -7.990347005862955,
+      "longitude": -38.29223983639888
+    },
+    "destinations": {
+      "hour": "id"
+    }
+  },
+  {
+    "name": "Av. Triunfo",
+    "description": "",
+    "coordenates": {
+      "latitude": -7.990347005862955,
+      "longitude": -38.29223983639888
+    },
+    "destinations": {
+      "hour": "id"
+    }
+  },
+  {
+    "name": "Av. Padre Cícero",
+    "description": "",
+    "coordenates": {
+      "latitude": -7.990347005862955,
+      "longitude": -38.29223983639888
+    },
+    "destinations": {
+      "hour": "id"
+    }
+  },
+  {
+    "name": "IPSEP",
+    "description": "",
+    "coordenates": {
+      "latitude": -7.990347005862955,
+      "longitude": -38.29223983639888
+    },
+    "destinations": {
+      "hour": "id"
+    }
+  },
+  {
+    "name": "BR",
+    "description": "",
+    "coordenates": {
+      "latitude": -7.990347005862955,
+      "longitude": -38.29223983639888
+    },
+    "destinations": {
+      "hour": "id"
+    }
+  },
+  {
+    "name": "UAST",
+    "description": "",
+    "coordenates": {
+      "latitude": -7.990347005862955,
+      "longitude": -38.29223983639888
+    },
+    "destinations": {
+      "hour": "id"
+    }
   }
 ]
