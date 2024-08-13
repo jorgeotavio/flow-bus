@@ -15,7 +15,7 @@ const MapComponent = ({ busStops }) => {
         attribution="&copy; OpenStreetMap contributors"
       />
       {busStops.map((stop, key) => (
-        <Marker key={key} position={[stop.latitude, stop.longitude]}>
+        <Marker key={key} position={[stop.coordenates.latitude, stop.coordenates.longitude]}>
           <Popup>{stop.name}</Popup>
         </Marker>
       ))}

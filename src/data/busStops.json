@@ -3,8 +3,8 @@
     "name": "Alto do Bom Jesus",
     "description": "",
     "coordenates": {
-      "latitude": -7.990347005862955,
-      "longitude": -38.29223983639888
+      "latitude": -7.9884476867969205,
+      "longitude": -38.3090069676906
     },
     "destinations": {
       "hour": "id"
@@ -14,8 +14,8 @@
     "name": "Centro",
     "description": "",
     "coordenates": {
-      "latitude": -7.990347005862955,
-      "longitude": -38.29223983639888
+      "latitude": -7.9912590238606125,
+      "longitude": -38.298167039057915
     },
     "destinations": {
       "hour": "id"
@@ -25,8 +25,8 @@
     "name": "Fafopst",
     "description": "",
     "coordenates": {
-      "latitude": -7.990347005862955,
-      "longitude": -38.29223983639888
+      "latitude": -7.990269538583635,
+      "longitude": -38.292176933362924
     },
     "destinations": {
       "hour": "id"
@@ -36,8 +36,8 @@
     "name": "Santa",
     "description": "",
     "coordenates": {
-      "latitude": -7.990347005862955,
-      "longitude": -38.29223983639888
+      "latitude": -7.987473094469466,
+      "longitude": -38.29095976282921
     },
     "destinations": {
       "hour": "id"
@@ -47,8 +47,8 @@
     "name": "Mercantil Santana",
     "description": "",
     "coordenates": {
-      "latitude": -7.990347005862955,
-      "longitude": -38.29223983639888
+      "latitude": -7.984776029122194,
+      "longitude": -38.29020001318058
     },
     "destinations": {
       "hour": "id"
@@ -58,8 +58,8 @@
     "name": "Av. Triunfo",
     "description": "",
     "coordenates": {
-      "latitude": -7.990347005862955,
-      "longitude": -38.29223983639888
+      "latitude": -7.983373526044373,
+      "longitude": -38.28981232587792
     },
     "destinations": {
       "hour": "id"
@@ -69,8 +69,8 @@
     "name": "Av. Padre Cícero",
     "description": "",
     "coordenates": {
-      "latitude": -7.990347005862955,
-      "longitude": -38.29223983639888
+      "latitude": -7.981048877566367,
+      "longitude": -38.291801685477424
     },
     "destinations": {
       "hour": "id"
@@ -80,8 +80,8 @@
     "name": "IPSEP",
     "description": "",
     "coordenates": {
-      "latitude": -7.990347005862955,
-      "longitude": -38.29223983639888
+      "latitude": -7.987808400499767,
+      "longitude": -38.289704944701455
     },
     "destinations": {
       "hour": "id"
@@ -102,8 +102,8 @@
     "name": "UAST",
     "description": "",
     "coordenates": {
-      "latitude": -7.990347005862955,
-      "longitude": -38.29223983639888
+      "latitude": -7.9561434853842,
+      "longitude": -38.29580274495935
     },
     "destinations": {
       "hour": "id"
