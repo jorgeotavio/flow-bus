@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import useUserCurrentPosition from '../hooks/useUserCurrentPosition';
 import { useNavigate, useParams } from 'react-router-dom';
 import useCurrentBusStop from '../hooks/useCurrentBusStop';
+import useNearestBusStop from '../hooks/useNearestBusStop';
 
 function MapComponentBase({ center, zoom }) {
   const map = useMap();
@@ -24,6 +25,9 @@ const MapComponent = ({ busStops }) => {
 
   let center = position ? [position.latitude, position.longitude] : [-7.9820696461839695, -38.29091520605652]
   let zoom = 15
+
+  const nearestBusStop = useNearestBusStop(position)
+  console.log(nearestBusStop.name);
 
   if (busStop) {
     center = [busStop.coordenates.latitude, busStop.coordenates.longitude]

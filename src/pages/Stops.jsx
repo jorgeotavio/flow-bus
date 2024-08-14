@@ -9,7 +9,6 @@ import { ArrowLeft } from '@phosphor-icons/react';
 
 const Stops = () => {
   const [busStops, setBusStops] = useState([]);
-  const { stopId } = useParams()
   const navigate = useNavigate()
 
   useEffect(() => {
