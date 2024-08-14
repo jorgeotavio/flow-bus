@@ -7,7 +7,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <div>Teste</div>
+    // errorElement: <div>Teste</div>
   },
   {
     path: "/bus-stops",
@@ -20,7 +20,6 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-
   return (
     <RouterProvider router={router} />
   );

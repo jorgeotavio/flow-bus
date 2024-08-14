@@ -1,16 +1,14 @@
-import { useNavigate, useParams } from "react-router-dom"
-import { Card, CardBody, CardHeader } from "reactstrap"
-import busStopsData from '../data/busStops.json';
+import { useNavigate } from "react-router-dom"
+import { Card, CardBody } from "reactstrap"
 import { X } from "@phosphor-icons/react";
+import useCurrentBusStop from "../hooks/useCurrentBusStop";
 
 const ShowStopData = () => {
-  const { stopId } = useParams()
-  const busStopFiltreds = busStopsData.filter(b => b.id == stopId)
-  const busStop = busStopFiltreds.length > 0 ? busStopFiltreds[0] : null
+  const { busStop } = useCurrentBusStop()
   const navigate = useNavigate()
 
   return (
-    stopId ?
+    busStop ?
     <Card>
       <CardBody>
         <div className="d-flex justify-content-between">

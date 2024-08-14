@@ -1,0 +1,11 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bus-home-image {
+  background-image: url('/assets/in-the-bus-stop.jpg');
+  background-position: left center;
+  background-size: cover;
+  height: 100vh;
+  background-color: black;
+}

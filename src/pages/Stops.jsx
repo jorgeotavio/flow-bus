@@ -3,12 +3,14 @@ import MapComponent from '../components/MapComponent';
 import BusStopList from '../components/BusStopList';
 import busStopsData from '../data/busStops.json';
 import { Card, CardBody, Col, Container } from 'reactstrap';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import ShowStopData from '../components/ShowStopData';
+import { ArrowLeft } from '@phosphor-icons/react';
 
 const Stops = () => {
   const [busStops, setBusStops] = useState([]);
   const { stopId } = useParams()
+  const navigate = useNavigate()
 
   useEffect(() => {
     setBusStops(busStopsData);
@@ -23,16 +25,19 @@ const Stops = () => {
       <div className='h-100 w-100'>
         <MapComponent busStops={busStops} />
       </div>
-      <div className='fixed-top p-2'>
-        <Col xs='12' md='5'>
+      <Col className='fixed-top p-2' xs='12' md='5'>
         <Card>
           <CardBody>
-            Indo para
+            <div className='mb-4 d-flex align-items-center'>
+              <span className='me-2 cursor-pointer' onClick={() => navigate('/')}>
+                <ArrowLeft size={16} />
+              </span>
+              Tela Inicial
+            </div>
             <BusStopList busStops={busStops} onSelect={handleSelect} />
           </CardBody>
         </Card>
-        </Col>
-      </div>
+      </Col>
       <div className='fixed-bottom p-2'>
         <ShowStopData />
       </div>
