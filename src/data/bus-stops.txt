@@ -95,6 +95,7 @@ UAST - Bloco D (Fazenda Saco)
 UAST - Bloco 02 (Final) (Fazenda Saco)
 
 === FAFOPST-IPSEP-UAST
+5, 6, 7, 8, 9, 10, 11, 12, 13
 FAFOPST (N. Sra. da Conceição)
 Santa (N. Sra da Conceição)
 Mercantil Santana (N. Sra. da Conceição)
@@ -106,6 +107,7 @@ UAST - Bloco D (Fazenda Saco)
 UAST - Bloco 02 (Final) (Fazenda Saco)
 
 === ALTO-CENTRO-FAFOPST-IPSEP-UAST
+1, 2, 3, 4, 5, 19, 18, 14, 6, 9, 10, 11, 12, 13
 Alto da Boa Vista (Boa Vista)
 Parada do Cristo (Alto do Bom Jesus)
 Lima Calçados (Centro)
@@ -140,6 +142,7 @@ Uast => Cidade
 ==========================================================
 
 === UAST-BR-ALTO
+13, 12, 11, 10, 9, 20, 21, 22
 UAST - Bloco 02 (Final) (Fazenda Saco)
 UAST - Bloco D (Fazenda Saco)
 Igreja Multirão (Bairro Universitário)
@@ -150,6 +153,7 @@ Oliveira Construções (Alto do Bom Jesus)
 Academia da Cidade (Alto do Bom Jesus)
 
 === UAST-SANTA- FAFOPST
+13, 12, 11, 10, 9, 8, 7, 6, 23, 5
 UAST - Bloco 02 (Final) (Fazenda Saco)
 UAST - Bloco D (Fazenda Saco)
 Igreja Multirão (Bairro Universitário)
@@ -163,6 +167,7 @@ FAFOPST (N. Sra. da Conceição)
 
 
 === UAST-AV.TRIUNFO-MERCANTIL-VILA_SAÚDE-IPSEP
+13, 12, 11, 24, 8, 7, 6, 23, 19, 18, 14
 UAST - Bloco 02 (Final) (Fazenda Saco)
 UAST - Bloco D (Fazenda Saco)
 Igreja Multirão (Bairro Universitário)
@@ -176,6 +181,8 @@ Edifícil Jardim da Serra
 Mercado JK (IPSEP)
 
 === UAST-SANTA-COMPESA-IPSEP
+13, 12, 11, 10, 9, 25, 26, 8, 7, 6, 27, 14
+
 UAST - Bloco 02 (Final) (Fazenda Saco)
 UAST - Bloco D (Fazenda Saco)
 Igreja Multirão (Bairro Universitário)
@@ -190,6 +197,8 @@ Compesa
 Mercado JK (IPSEP)
 
 === UAST-FAFOPST-CENTRO-ALTO
+13, 12, 11, 10, 9, 25, 26, 23, 4, 28, 2, 22
+
 UAST - Bloco 02 (Final) (Fazenda Saco)
 UAST - Bloco D (Fazenda Saco)
 Igreja Multirão (Bairro Universitário)
@@ -207,6 +216,8 @@ Parada do Cristo (Alto do Bom Jesus)
 Academia da Cidade (Alto do Bom Jesus)
 
 === UAST-VILA_SAÚDE-IPSEP
+13, 12, 11, 10, 9, 25, 26, 8, 6, 23, 19, 18, 14
+
 UAST - Bloco 02 (Final) (Fazenda Saco)
 UAST - Bloco D (Fazenda Saco)
 Igreja Multirão (Bairro Universitário)
@@ -222,6 +233,8 @@ Edifícil Jardim da Serra
 Mercado JK (IPSEP)
 
 === UAST-CENTRO-ALTO
+13, 12, 11, 10, 9, 8, 7, 6, 23, 4, 28, 2, 22
+
 UAST - Bloco 02 (Final) (Fazenda Saco)
 UAST - Bloco D (Fazenda Saco)
 Igreja Multirão (Bairro Universitário)
@@ -237,6 +250,8 @@ Parada do Cristo (Alto do Bom Jesus)
 Academia da Cidade (Alto do Bom Jesus)
 
 === UAST-MERCANTIL-FAFOPST-IPSEP
+13, 12, 11, 10, 9, 25, 26, 8, 7, 6, 23, 14
+
 UAST - Bloco 02 (Final) (Fazenda Saco)
 UAST - Bloco D (Fazenda Saco)
 Igreja Multirão (Bairro Universitário)
@@ -251,6 +266,8 @@ Praça Vermelha (N. Sra da Conceição)
 Mercado JK (IPSEP)
 
 === UAST-FAFOPST-CENTRO-ALTO-MALHADA
+13, 12, 11, 10, 9, 25, 26, 8, 7, 6, 23, 4, 28, 2, 22, 29
+
 UAST - Bloco 02 (Final) (Fazenda Saco)
 UAST - Bloco D (Fazenda Saco)
 Igreja Multirão (Bairro Universitário)

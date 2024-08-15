@@ -4,6 +4,7 @@ import useItineraries from "../hooks/useItineraries";
 import 'leaflet-routing-machine/dist/leaflet-routing-machine.css';
 import L from 'leaflet';
 import 'leaflet-routing-machine';
+import { iconPin, iconPinRed } from "./icons";
 
 function MapComponentBaseRoutes() {
   const map = useMap();
@@ -18,7 +19,8 @@ function MapComponentBaseRoutes() {
         show: false,
         createMarker: function(i, wp) {
           return L.marker(wp.latLng, {
-            draggable: false
+            draggable: false,
+            icon: i === 0 ? iconPinRed : iconPin
           });
         }
       }).addTo(map);

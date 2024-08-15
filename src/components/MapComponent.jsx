@@ -8,6 +8,7 @@ import useBusStops from '../hooks/useBusStops';
 import useItineraries from '../hooks/useItineraries';
 import MapComponentBase from './MapComponentBase';
 import MapComponentBaseRoutes from './MapComponentRoutes';
+import { iconPin } from './icons';
 
 const MapComponent = () => {
   const { busStops } = useBusStops();
@@ -38,7 +39,9 @@ const MapComponent = () => {
           eventHandlers={{
             click: () => ({})
           }}
-          position={stop.coordenates}>
+          position={stop.coordenates}
+          icon={iconPin}
+          >
           <Popup>{stop.name}</Popup>
         </Marker>
       ))}
