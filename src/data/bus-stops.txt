@@ -34,7 +34,7 @@ Malhada
 
 Cidade => Uast
 
-- ALTO-CENTRO-FAFOPST-UAST
+- "OK" ALTO-CENTRO-FAFOPST-UAST
 - SEC EDUCAÇÃO-FAFOPST-UAST
 - FAFOPST-SANTA-MERCATIL-UAST
 - IPSEP-BR-UAST
@@ -43,7 +43,7 @@ Cidade => Uast
 
 ==========================================================
 
-==== ALTO-CENTRO-FAFOPST-UAST
+==== ALTO-CENTRO-FAFOPST-UAST "OK"
 Alto da Boa Vista (Boa Vista)
 Parada do Cristo (Alto do Bom Jesus)
 Lima Calçados (Centro)

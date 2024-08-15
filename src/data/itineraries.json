@@ -2,12 +2,11 @@
   {
     "id" : 1,
     "name": "ALTO-CENTRO-FAFOPST-UAST",
-    "from": "city",
-    "to": 10,
+    "to": "uast",
     "description": "",
     "destinations": [
       {
-        "hour": "12:00",
+        "hour": "07:00",
         "waypoints": [
           {
             "stop": 1,
@@ -22,8 +21,36 @@
             "hour": "07:15"
           },
           {
-            "stop": 10,
+            "stop": 4,
+            "hour": "07:20"
+          },
+          {
+            "stop": 5,
+            "hour": "07:25"
+          },
+          {
+            "stop": 6,
+            "hour": "07:30"
+          },
+          {
+            "stop": 9,
             "hour": "07:40"
+          },
+          {
+            "stop": 10,
+            "hour": "07:45"
+          },
+          {
+            "stop": 11,
+            "hour": "07:50"
+          },
+          {
+            "stop": 12,
+            "hour": "07:55"
+          },
+          {
+            "stop": 13,
+            "hour": "08:00"
           }
         ]
       }

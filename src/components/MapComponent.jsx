@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMap, Polyline } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import useUserCurrentPosition from '../hooks/useUserCurrentPosition';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -36,6 +36,10 @@ const MapComponent = ({ busStops }) => {
 
   let busStopsToList = busStop ? busStops.filter(bs => bs.id == busStop.id) : busStops
 
+  let waypoints = [    { lat: 51.505, lng: -0.09 },
+    { lat: 51.51, lng: -0.1 },
+    { lat: 51.515, lng: -0.09 },]
+
   return (
     <MapContainer center={center} zoom={zoom} style={{ height: '100vh', width: '100vw' }}>
       <TileLayer
@@ -54,6 +58,7 @@ const MapComponent = ({ busStops }) => {
         </Marker>
       ))}
       <MapComponentBase center={center} zoom={zoom} />
+      <Polyline positions={waypoints.map(point => [point.lat, point.lng])} color="blue" />
     </MapContainer>
   );
 };
