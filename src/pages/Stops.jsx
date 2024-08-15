@@ -22,7 +22,7 @@ const Stops = () => {
       <Col className='fixed-top p-2' xs='12' md='5'>
         <Card>
           <CardBody>
-            <div className='mb-4 d-flex align-items-center'>
+            <div className='mb-3 d-flex align-items-center'>
               <span className='me-2 cursor-pointer' onClick={() => navigate('/')}>
                 <ArrowLeft size={16} />
               </span>

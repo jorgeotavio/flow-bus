@@ -1,15 +1,31 @@
-import { useParams } from "react-router-dom"
+import { useMemo, useCallback } from "react";
+import { useSearchParams } from "react-router-dom"
 import useBusStops from "./useBusStops"
+import lodash, { isEmpty } from 'lodash'
 
 const useCurrentBusStop = () => {
-  const { stopId } = useParams()
+  const [searchParams, setSearchParams] = useSearchParams();
+  const stopId = searchParams.get('bus-stop')
   const { busStops } = useBusStops()
-  const busStopFiltreds = busStops.filter(b => b.id == stopId)
-  const busStop = busStopFiltreds.length > 0 ? busStopFiltreds[0] : null
+
+  const setBusStopParam = useCallback((id) => {
+    if (isEmpty(id)) {
+      searchParams.set('bus-stop', id);
+    } else {
+      searchParams.delete('bus-stop');
+    }
+    setSearchParams(searchParams);
+  }, [stopId])
+
+  const currentBusStop = useMemo(() => {
+    const [filtred] = lodash.filter(busStops, stop => stop.id == stopId)
+    return filtred
+  }, [stopId])
 
   return {
     stopId,
-    busStop
+    currentBusStop,
+    setBusStopParam
   }
 }
 
