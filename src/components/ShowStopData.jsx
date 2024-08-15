@@ -1,12 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import { Badge, Card, CardBody } from "reactstrap";
-import { ArrowRight, Clock, MapPinLine, Star, X } from "@phosphor-icons/react";
+import { Card, CardBody } from "reactstrap";
+import { MapPinLine, X } from "@phosphor-icons/react";
 import useCurrentBusStop from "../hooks/useCurrentBusStop";
-import useBusStops from "../hooks/useBusStops";
 
 const ShowStopData = () => {
   const { busStop } = useCurrentBusStop();
-  const { filterById } = useBusStops();
   const navigate = useNavigate();
 
   return busStop ? (

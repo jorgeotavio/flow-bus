@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { Card, CardBody, Col, Input, Row } from 'reactstrap';
+import { Button, Card, CardBody, Col, Input, Row, UncontrolledCollapse } from 'reactstrap';
 import useItineraries from '../hooks/useItineraries';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { Buildings, GraduationCap } from '@phosphor-icons/react';
@@ -19,7 +19,7 @@ const BusStopList = () => {
   const onChangeDestination = (e) => setItineraryParam(e.target.value)
 
   return (
-    <div>
+    <UncontrolledCollapse toggler="#toggler">
       <div className='mb-3'>
         <label className='mb-2' htmlFor="">
           Para onde você vai?
@@ -41,7 +41,7 @@ const BusStopList = () => {
           </Col>
         </Row>
       </div>
-       <div className='mt-3'>
+      <div className='mt-3'>
         <label className='mb-2' htmlFor="">
           Itinerário
         </label>
@@ -54,7 +54,7 @@ const BusStopList = () => {
           ))}
         </Input>
       </div>
-    </div>
+    </UncontrolledCollapse>
   );
 };
 
