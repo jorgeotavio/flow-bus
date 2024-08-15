@@ -1,9 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Badge, Input } from 'reactstrap';
+import useBusStops from '../hooks/useBusStops';
 
-const BusStopList = ({ busStops }) => {
+const BusStopList = () => {
   const navigate = useNavigate()
+  const { busStops } = useBusStops()
   const onChangeOrigin = (e) => console.log(e.target.value)
   const onChangeDestination = (e) => navigate(`/bus-stops/${e.target.value}`)
 

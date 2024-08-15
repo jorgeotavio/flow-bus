@@ -1,44 +1,31 @@
-import React, { useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMap, Polyline } from 'react-leaflet';
+import React from 'react';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+
 import useUserCurrentPosition from '../hooks/useUserCurrentPosition';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import useCurrentBusStop from '../hooks/useCurrentBusStop';
-import useNearestBusStop from '../hooks/useNearestBusStop';
+import useBusStops from '../hooks/useBusStops';
+import useItineraries from '../hooks/useItineraries';
+import MapComponentBase from './MapComponentBase';
 
-function MapComponentBase({ center, zoom }) {
-  const map = useMap();
+const MapComponent = () => {
+  const { busStops } = useBusStops();
+  const { busStop } = useCurrentBusStop();
+  const position = useUserCurrentPosition();
+  const { itineraries } = useItineraries();
 
-  useEffect(() => {
-    if (center) {
-      map.setView(center, zoom);
-    }
-  }, [center, zoom, map]);
+  let waypoints = itineraries.map(i => i.destinations.map(d => d.waypoints.map(w => w.coordenates)))[0][0];
 
-  return null;
-}
-
-const MapComponent = ({ busStops }) => {
-  const { busStop } = useCurrentBusStop()
-  const position = useUserCurrentPosition()
-  const navigate = useNavigate()
-
-  let center = position ? [position.latitude, position.longitude] : [-7.9820696461839695, -38.29091520605652]
-  let zoom = 15
-
-  const nearestBusStop = useNearestBusStop(position)
-  console.log(nearestBusStop && nearestBusStop.name);
+  let center = position ? [position.latitude, position.longitude] : [-7.9820696461839695, -38.29091520605652];
+  let zoom = 15;
 
   if (busStop) {
-    center = busStop.coordenates
-    zoom = 16
+    center = busStop.coordenates;
+    zoom = 16;
   }
 
-  let busStopsToList = busStop ? busStops.filter(bs => bs.id == busStop.id) : busStops
-
-  let waypoints = [    { lat: 51.505, lng: -0.09 },
-    { lat: 51.51, lng: -0.1 },
-    { lat: 51.515, lng: -0.09 },]
+  let busStopsToList = busStop ? busStops.filter(bs => bs.id === busStop.id) : busStops;
 
   return (
     <MapContainer center={center} zoom={zoom} style={{ height: '100vh', width: '100vw' }}>
@@ -46,7 +33,7 @@ const MapComponent = ({ busStops }) => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; OpenStreetMap contributors"
       />
-      {busStopsToList.map((stop, key) => (
+      {/* {busStopsToList.map((stop, key) => (
         <Marker
           className='bg-danger'
           key={key}
@@ -56,9 +43,8 @@ const MapComponent = ({ busStops }) => {
           position={stop.coordenates}>
           <Popup>{stop.name}</Popup>
         </Marker>
-      ))}
-      <MapComponentBase center={center} zoom={zoom} />
-      <Polyline positions={waypoints.map(point => [point.lat, point.lng])} color="blue" />
+      ))} */}
+      <MapComponentBase center={center} zoom={zoom} waypoints={waypoints} />
     </MapContainer>
   );
 };

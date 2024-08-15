@@ -8,12 +8,7 @@ import ShowStopData from '../components/ShowStopData';
 import { ArrowLeft } from '@phosphor-icons/react';
 
 const Stops = () => {
-  const [busStops, setBusStops] = useState([]);
   const navigate = useNavigate()
-
-  useEffect(() => {
-    setBusStops(busStopsData);
-  }, []);
 
   const handleSelect = stop => {
     console.log('Parada selecionada:', stop);
@@ -22,7 +17,7 @@ const Stops = () => {
   return (
     <div>
       <div className='h-100 w-100'>
-        <MapComponent busStops={busStops} />
+        <MapComponent />
       </div>
       <Col className='fixed-top p-2' xs='12' md='5'>
         <Card>
@@ -33,7 +28,7 @@ const Stops = () => {
               </span>
               Tela Inicial
             </div>
-            <BusStopList busStops={busStops} onSelect={handleSelect} />
+            <BusStopList onSelect={handleSelect} />
           </CardBody>
         </Card>
       </Col>

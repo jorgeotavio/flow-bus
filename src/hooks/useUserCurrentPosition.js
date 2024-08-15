@@ -7,8 +7,6 @@ const useUserCurrentPosition = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
           setPosition(position.coords)
-          console.log(position.coords);
-
       }, () => {
           console.error('Geolocation not supported or permission denied');
       });
