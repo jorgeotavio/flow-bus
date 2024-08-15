@@ -1,122 +1,176 @@
 [
   {
     "id" : 1,
-    "name": "Alto do Bom Jesus",
+    "name": "Alto da Boa Vista (Boa Vista )",
     "description": "",
-    "coordenates": {
-      "latitude": -7.9884476867969205,
-      "longitude": -38.3090069676906
-    },
-    "destinations": {
-      "hour": "id"
-    }
+    "coordenates": [-7.9834175636075715, -38.31506194376145]
   },
   {
     "id" : 2,
-    "name": "Centro",
+    "name": "Parada do Cristo (Alto do Bom Jesus)",
     "description": "",
-    "coordenates": {
-      "latitude": -7.9912590238606125,
-      "longitude": -38.298167039057915
-    },
-    "destinations": {
-      "hour": "id"
-    }
+    "coordenates": [-7.988877121336048, -38.306563588281904]
   },
   {
     "id" : 3,
-    "name": "Fafopst",
+    "name": "Lima Calçados (Centro)",
     "description": "",
-    "coordenates": {
-      "latitude": -7.990269538583635,
-      "longitude": -38.292176933362924
-    },
-    "destinations": {
-      "hour": "id"
-    }
+    "coordenates": [-7.990342533652424, -38.30154035946517]
   },
   {
     "id" : 4,
-    "name": "Santa",
+    "name": "Secretaria de Educação (Centro)",
     "description": "",
-    "coordenates": {
-      "latitude": -7.987473094469466,
-      "longitude": -38.29095976282921
-    },
-    "destinations": {
-      "hour": "id"
-    }
+    "coordenates": [-7.991267512503994, -38.29815201693592]
   },
   {
     "id" : 5,
-    "name": "Mercantil Santana",
+    "name": "FAFOPST (N. Sra. da Conceição)",
     "description": "",
-    "coordenates": {
-      "latitude": -7.984776029122194,
-      "longitude": -38.29020001318058
-    },
-    "destinations": {
-      "hour": "id"
-    }
+    "coordenates": [-7.990338564330308, -38.292249708281624]
   },
   {
     "id" : 6,
-    "name": "Av. Triunfo",
+    "name": "Santa (N. Sra da Conceição)",
     "description": "",
-    "coordenates": {
-      "latitude": -7.983373526044373,
-      "longitude": -38.28981232587792
-    },
-    "destinations": {
-      "hour": "id"
-    }
+    "coordenates": [-7.987457195721979, -38.290957686493265]
   },
   {
     "id" : 7,
-    "name": "Av. Padre Cícero",
+    "name": "Mercantil Santana (N. Sra. da Conceição)",
     "description": "",
-    "coordenates": {
-      "latitude": -7.981048877566367,
-      "longitude": -38.291801685477424
-    },
-    "destinations": {
-      "hour": "id"
-    }
+    "coordenates": [-7.984738208350752, -38.29021521141139]
   },
   {
     "id" : 8,
-    "name": "IPSEP",
+    "name": "DJAFarma (São Cristovão)",
     "description": "",
-    "coordenates": {
-      "latitude": -7.987808400499767,
-      "longitude": -38.289704944701455
-    },
-    "destinations": {
-      "hour": "id"
-    }
+    "coordenates": [-7.983318793154923, -38.289768359446455]
   },
   {
     "id" : 9,
-    "name": "BR",
+    "name": "Mercadinho Miranda (Bairro Universitário)",
     "description": "",
-    "coordenates": {
-      "latitude": -7.990347005862955,
-      "longitude": -38.29223983639888
-    },
-    "destinations": {
-      "hour": "id"
-    }
+    "coordenates": [-7.980052196985137, -38.29158731968407]
   },
   {
     "id" : 10,
-    "name": "UAST",
+    "name": "Curral (Bairro Universitário)",
     "description": "",
-    "coordenates": {
-      "latitude": -7.9561434853842,
-      "longitude": -38.29580274495935
-    },
-    "destinations": {
-      "hour": "id"
-    }
+    "coordenates": [-7.975165409556811, -38.2893503879759]
+  },
+  {
+    "id" : 11,
+    "name": "Igreja Multirão (Bairro Universitário)",
+    "description": "",
+    "coordenates": [-7.9731041886739735, -38.286671161295246]
+  },
+  {
+    "id" : 12,
+    "name": "UAST - Bloco D (Fazenda Saco)",
+    "description": "",
+    "coordenates": [-7.956269571017419, -38.29513674715397]
+  },
+  {
+    "id" : 13,
+    "name": "UAST - Bloco 02 (Fazenda Saco)",
+    "description": "",
+    "coordenates": [-7.955622509342785, -38.297008152568836]
+  },
+  {
+    "id" : 14,
+    "name": "Mercado JK (IPSEP)",
+    "description": "",
+    "coordenates": [-7.990130907590722, -38.28523991977569]
+  },
+  {
+    "id" : 15,
+    "name": "Antiga COBAL (IPSEP)",
+    "description": "",
+    "coordenates": [-7.986957464302057, -38.28448972487721]
+  },
+  {
+    "id" : 16,
+    "name": "Oficina São José (IPSEP)",
+    "description": "",
+    "coordenates": [-7.983532142304565, -38.283453118966456]
+  },
+  {
+    "id" : 17,
+    "name": "BR-232",
+    "description": "",
+    "coordenates": [-7.982197696653822, -38.29484873914025]
+  },
+  {
+    "id" : 18,
+    "name": "Edifícil Jardim da Serra",
+    "description": "",
+    "coordenates": [-7.993320650919621, -38.28744272081509]
+  },
+  {
+    "id" : 19,
+    "name": "Vila Saúde",
+    "description": "",
+    "coordenates": [-7.990839598813662, -38.290984088282016]
+  },
+  {
+    "id" : 20,
+    "name": "Pousada (Borborema)",
+    "description": "Posto Pde Cícero",
+    "coordenates": [-7.98140932487319, -38.30526092133969]
+  },
+  {
+    "id" : 21,
+    "name": "Oliveira Construções (Alto do Bom Jesus)",
+    "description": "",
+    "coordenates": [-7.984362600146938, -38.30682691465275]
+  },
+  {
+    "id" : 22,
+    "name": "Academia da Cidade (Alto do Bom Jesus)",
+    "description": "",
+    "coordenates": [-7.986993730337392, -38.31024271349652]
+  },
+  {
+    "id" : 23,
+    "name": "Praça Vermelha (N. Sra da Conceição)",
+    "description": "wrong coordenates",
+    "coordenates": [-7.981954188431991, -38.28975992880887]
+  },
+  {
+    "id" : 24,
+    "name": "Av. Triunfo",
+    "description": "",
+    "coordenates": [-7.981954188431991, -38.28975992880887]
+  },
+  {
+    "id" : 25,
+    "name": "Posto VISA (CAGEP)",
+    "description": "",
+    "coordenates": [-7.981753242624057, -38.29470173233299]
+  },
+  {
+    "id" : 26,
+    "name": "Mercadinho o Bom Ladrão (São Cristóvão)",
+    "description": "wrong coordenates",
+    "coordenates": [-7.981954188431991, -38.28975992880887]
+  },
+  {
+    "id" : 27,
+    "name": "Compesa",
+    "description": "",
+    "coordenates": [-7.989187791251998, -38.291396767402716]
+  },
+  {
+    "id" : 28,
+    "name": "Mercado Público (Centro)",
+    "description": "",
+    "coordenates": [-7.990060995833078, -38.30206775931629]
+  },
+  {
+    "id" : 29,
+    "name": "Malhada",
+    "description": "wrong coordenates",
+    "coordenates": [-7.981954188431991, -38.28975992880887]
   }
 ]

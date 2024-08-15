@@ -1,0 +1,32 @@
+[
+  {
+    "id" : 1,
+    "name": "ALTO-CENTRO-FAFOPST-UAST",
+    "from": "city",
+    "to": 10,
+    "description": "",
+    "destinations": [
+      {
+        "hour": "12:00",
+        "waypoints": [
+          {
+            "stop": 1,
+            "hour": "07:00"
+          },
+          {
+            "stop": 2,
+            "hour": "07:10"
+          },
+          {
+            "stop": 3,
+            "hour": "07:15"
+          },
+          {
+            "stop": 10,
+            "hour": "07:40"
+          }
+        ]
+      }
+    ]
+  },
+]

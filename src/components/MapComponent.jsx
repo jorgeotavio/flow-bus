@@ -27,10 +27,10 @@ const MapComponent = ({ busStops }) => {
   let zoom = 15
 
   const nearestBusStop = useNearestBusStop(position)
-  console.log(nearestBusStop.name);
+  console.log(nearestBusStop && nearestBusStop.name);
 
   if (busStop) {
-    center = [busStop.coordenates.latitude, busStop.coordenates.longitude]
+    center = busStop.coordenates
     zoom = 16
   }
 
@@ -49,10 +49,7 @@ const MapComponent = ({ busStops }) => {
           eventHandlers={{
             click: () => navigate(`/bus-stops/${stop.id}`)
           }}
-          position={[
-            stop.coordenates.latitude,
-            stop.coordenates.longitude
-          ]}>
+          position={stop.coordenates}>
           <Popup>{stop.name}</Popup>
         </Marker>
       ))}

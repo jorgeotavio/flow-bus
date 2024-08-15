@@ -1,0 +1,286 @@
+===== Pontos únicos
+
+- Alto da Boa Vista (Boa Vista)
+- Parada do Cristo (Alto do Bom Jesus)
+- Lima Calçados (Centro)
+- Secretaria de Educação (Centro)
+- FAFOPST (N. Sra. da Conceição)
+- Santa (N. Sra da Conceição)
+- Mercantil Santana (N. Sra. da Conceição)
+- DJAFarma (São Cristovão)
+- Mercadinho Miranda (Bairro Universitário)
+- Curral (Bairro Universitário)
+- Igreja Multirão (Bairro Universitário)
+- UAST - Bloco D (Fazenda Saco)
+- UAST - Bloco 02 (Final) (Fazenda Saco)
+- Mercado JK (IPSEP)
+- Antiga COBAL (IPSEP)
+- Oficina São José (IPSEP)
+- BR-232
+- Edifícil Jardim da Serra
+- Vila Saúde
+- Pousada (Posto Pde Cícero) (Borborema)
+- Oliveira Construções (Alto do Bom Jesus)
+- Academia da Cidade (Alto do Bom Jesus)
+Praça Vermelha (N. Sra da Conceição)
+- Av. Triunfo
+- Posto VISA (CAGEP)
+Mercadinho o Bom Ladrão (São Cristóvão)
+- Compesa
+- Mercado Público (Centro)
+Malhada
+
+==========================================================
+
+Cidade => Uast
+
+- ALTO-CENTRO-FAFOPST-UAST
+- SEC EDUCAÇÃO-FAFOPST-UAST
+- FAFOPST-SANTA-MERCATIL-UAST
+- IPSEP-BR-UAST
+- FAFOPST-IPSEP-UAST
+- ALTO-CENTRO-FAFOPST-IPSEP-UAST
+
+==========================================================
+
+==== ALTO-CENTRO-FAFOPST-UAST
+Alto da Boa Vista (Boa Vista)
+Parada do Cristo (Alto do Bom Jesus)
+Lima Calçados (Centro)
+Secretaria de Educação (Centro)
+FAFOPST (N. Sra. da Conceição)
+Santa (N. Sra da Conceição)
+Mercantil Santana (N. Sra. da Conceição)
+DJAFarma (São Cristovão)
+Mercadinho Miranda (Bairro Universitário)
+Curral (Bairro Universitário)
+Igreja Multirão (Bairro Universitário)
+UAST - Bloco D (Fazenda Saco)
+UAST - Bloco 02 (Final) (Fazenda Saco)
+
+==== SEC EDUCAÇÃO-FAFOPST-UAST
+Secretaria de Educação (Centro)
+FAFOPST (N. Sra. da Conceição)
+Santa (N. Sra da Conceição)
+Mercantil Santana (N. Sra. da Conceição)
+DJAFarma (São Cristovão)
+Mercadinho Miranda (Bairro Universitário)
+Curral (Bairro Universitário)
+Igreja Multirão (Bairro Universitário)
+UAST - Bloco D (Fazenda Saco)
+UAST - Bloco 02 (Final) (Fazenda Saco)
+
+==== FAFOPST-SANTA-MERCATIL-UAST
+FAFOPST (N. Sra. da Conceição)
+Santa (N. Sra da Conceição)
+Mercantil Santana (N. Sra. da Conceição)
+DJAFarma (São Cristovão)
+Mercadinho Miranda (Bairro Universitário)
+Curral (Bairro Universitário)
+Igreja Multirão (Bairro Universitário)
+UAST - Bloco D (Fazenda Saco)
+UAST - Bloco 02 (Final) (Fazenda Saco)
+
+=== IPSEP-BR-UAST
+Mercado JK (IPSEP)
+Antiga COBAL (IPSEP)
+Oficina São José (IPSEP)
+BR-232
+Mercadinho Miranda (Bairro Universitário)
+Curral (Bairro Universitário)
+Igreja Multirão (Bairro Universitário)
+UAST - Bloco D (Fazenda Saco)
+UAST - Bloco 02 (Final) (Fazenda Saco)
+
+=== FAFOPST-IPSEP-UAST
+FAFOPST (N. Sra. da Conceição)
+Santa (N. Sra da Conceição)
+Mercantil Santana (N. Sra. da Conceição)
+DJAFarma (São Cristovão)
+Mercadinho Miranda (Bairro Universitário)
+Curral (Bairro Universitário)
+Igreja Multirão (Bairro Universitário)
+UAST - Bloco D (Fazenda Saco)
+UAST - Bloco 02 (Final) (Fazenda Saco)
+
+=== ALTO-CENTRO-FAFOPST-IPSEP-UAST
+Alto da Boa Vista (Boa Vista)
+Parada do Cristo (Alto do Bom Jesus)
+Lima Calçados (Centro)
+Secretaria de Educação (Centro)
+FAFOPST (N. Sra. da Conceição)
+Vila Saúde
+Edifícil Jardim da Serra
+Mercado JK (IPSEP)
+Santa (N. Sra da Conceição)
+Mercantil Santana (N. Sra. da Conceição)
+DJAFarma (São Cristovão)
+Mercadinho Miranda (Bairro Universitário)
+Curral (Bairro Universitário)
+Igreja Multirão (Bairro Universitário)
+UAST - Bloco D (Fazenda Saco)
+UAST - Bloco 02 (Final) (Fazenda Saco)
+
+==========================================================
+
+Uast => Cidade
+
+- UAST-BR-ALTO
+- UAST-SANTA- FAFOPST
+- UAST-AV.TRIUNFO-MERCANTIL-VILA_SAÚDE-IPSEP
+- UAST-SANTA-COMPESA-IPSEP
+- UAST-FAFOPST-CENTRO-ALTO
+- UAST-VILA_SAÚDE-IPSEP
+- UAST-CENTRO-ALTO
+- UAST-MERCANTIL-FAFOPST-IPSEP
+- UAST-FAFOPST-CENTRO-ALTO-MALHADA
+
+==========================================================
+
+=== UAST-BR-ALTO
+UAST - Bloco 02 (Final) (Fazenda Saco)
+UAST - Bloco D (Fazenda Saco)
+Igreja Multirão (Bairro Universitário)
+Curral (Bairro Universitário)
+Mercadinho Miranda (Bairro Universitário)
+Pousada (Posto Pde Cícero) (Borborema)
+Oliveira Construções (Alto do Bom Jesus)
+Academia da Cidade (Alto do Bom Jesus)
+
+=== UAST-SANTA- FAFOPST
+UAST - Bloco 02 (Final) (Fazenda Saco)
+UAST - Bloco D (Fazenda Saco)
+Igreja Multirão (Bairro Universitário)
+Curral (Bairro Universitário)
+Mercadinho Miranda (Bairro Universitário)
+DJAFarma (São Cristovão)
+Mercantil Santana (N. Sra. da Conceição)
+Santa (N. Sra da Conceição)
+Praça Vermelha (N. Sra da Conceição)
+FAFOPST (N. Sra. da Conceição)
+
+
+=== UAST-AV.TRIUNFO-MERCANTIL-VILA_SAÚDE-IPSEP
+UAST - Bloco 02 (Final) (Fazenda Saco)
+UAST - Bloco D (Fazenda Saco)
+Igreja Multirão (Bairro Universitário)
+Av. Triunfo
+DJAFarma (São Cristovão)
+Mercantil Santana (N. Sra. da Conceição)
+Santa (N. Sra da Conceição)
+Praça Vermelha (N. Sra da Conceição)
+Vila Saúde
+Edifícil Jardim da Serra
+Mercado JK (IPSEP)
+
+=== UAST-SANTA-COMPESA-IPSEP
+UAST - Bloco 02 (Final) (Fazenda Saco)
+UAST - Bloco D (Fazenda Saco)
+Igreja Multirão (Bairro Universitário)
+Curral (Bairro Universitário)
+Mercadinho Miranda (Bairro Universitário)
+Posto VISA (CAGEP)
+Mercadinho o Bom Ladrão (São Cristóvão)
+DJAFarma (São Cristovão)
+Mercantil Santana (N. Sra. da Conceição)
+Santa (N. Sra da Conceição)
+Compesa
+Mercado JK (IPSEP)
+
+=== UAST-FAFOPST-CENTRO-ALTO
+UAST - Bloco 02 (Final) (Fazenda Saco)
+UAST - Bloco D (Fazenda Saco)
+Igreja Multirão (Bairro Universitário)
+Curral (Bairro Universitário)
+Mercadinho Miranda (Bairro Universitário)
+Posto VISA (CAGEP)
+Mercadinho o Bom Ladrão (São Cristóvão)
+DJAFarma (São Cristovão)
+Mercantil Santana (N. Sra. da Conceição)
+Santa (N. Sra da Conceição)
+Praça Vermelha (N. Sra da Conceição)
+Secretaria de Educação (Centro)
+Mercado Público (Centro)
+Parada do Cristo (Alto do Bom Jesus)
+Academia da Cidade (Alto do Bom Jesus)
+
+=== UAST-VILA_SAÚDE-IPSEP
+UAST - Bloco 02 (Final) (Fazenda Saco)
+UAST - Bloco D (Fazenda Saco)
+Igreja Multirão (Bairro Universitário)
+Curral (Bairro Universitário)
+Mercadinho Miranda (Bairro Universitário)
+Posto VISA (CAGEP)
+Mercadinho o Bom Ladrão (São Cristóvão)
+DJAFarma (São Cristovão)
+Santa (N. Sra da Conceição)
+Praça Vermelha (N. Sra da Conceição)
+Vila Saúde
+Edifícil Jardim da Serra
+Mercado JK (IPSEP)
+
+=== UAST-CENTRO-ALTO
+UAST - Bloco 02 (Final) (Fazenda Saco)
+UAST - Bloco D (Fazenda Saco)
+Igreja Multirão (Bairro Universitário)
+Curral (Bairro Universitário)
+Mercadinho Miranda (Bairro Universitário)
+DJAFarma (São Cristovão)
+Mercantil Santana (N. Sra. da Conceição)
+Santa (N. Sra da Conceição)
+Praça Vermelha (N. Sra da Conceição)
+Secretaria de Educação (Centro)
+Mercado Público (Centro)
+Parada do Cristo (Alto do Bom Jesus)
+Academia da Cidade (Alto do Bom Jesus)
+
+=== UAST-MERCANTIL-FAFOPST-IPSEP
+UAST - Bloco 02 (Final) (Fazenda Saco)
+UAST - Bloco D (Fazenda Saco)
+Igreja Multirão (Bairro Universitário)
+Curral (Bairro Universitário)
+Mercadinho Miranda (Bairro Universitário)
+Posto VISA (CAGEP)
+Mercadinho o Bom Ladrão (São Cristóvão)
+DJAFarma (São Cristovão)
+Mercantil Santana (N. Sra. da Conceição)
+Santa (N. Sra da Conceição)
+Praça Vermelha (N. Sra da Conceição)
+Mercado JK (IPSEP)
+
+=== UAST-FAFOPST-CENTRO-ALTO-MALHADA
+UAST - Bloco 02 (Final) (Fazenda Saco)
+UAST - Bloco D (Fazenda Saco)
+Igreja Multirão (Bairro Universitário)
+Curral (Bairro Universitário)
+Mercadinho Miranda (Bairro Universitário)
+Posto VISA (CAGEP)
+Mercadinho o Bom Ladrão (São Cristóvão)
+DJAFarma (São Cristovão)
+Mercantil Santana (N. Sra. da Conceição)
+Santa (N. Sra da Conceição)
+Praça Vermelha (N. Sra da Conceição)
+Secretaria de Educação (Centro)
+Mercado Público (Centro)
+Parada do Cristo (Alto do Bom Jesus)
+Academia da Cidade (Alto do Bom Jesus)
+Malhada
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
