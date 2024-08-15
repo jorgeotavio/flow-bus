@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import MapComponent from '../components/MapComponent';
 import BusStopList from '../components/BusStopList';
-import busStopsData from '../data/busStops.json';
-import { Card, CardBody, Col, Container } from 'reactstrap';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Card, CardBody, Col } from 'reactstrap';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import ShowStopData from '../components/ShowStopData';
 import { ArrowLeft } from '@phosphor-icons/react';
 
 const Stops = () => {
   const navigate = useNavigate()
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const handleSelect = stop => {
     console.log('Parada selecionada:', stop);

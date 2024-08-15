@@ -81,7 +81,9 @@ Igreja Multirão (Bairro Universitário)
 UAST - Bloco D (Fazenda Saco)
 UAST - Bloco 02 (Final) (Fazenda Saco)
 
+
 === IPSEP-BR-UAST
+14, 15, 16, 17, 9, 10, 11, 12, 13
 Mercado JK (IPSEP)
 Antiga COBAL (IPSEP)
 Oficina São José (IPSEP)

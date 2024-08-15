@@ -12,11 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/bus-stops",
     element: <Stops />,
-  },
-  {
-    path: "/bus-stops/:stopId",
-    element: <Stops />,
-  },
+  }
 ]);
 
 const App = () => {
