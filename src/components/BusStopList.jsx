@@ -19,7 +19,7 @@ const BusStopList = () => {
   const onChangeDestination = (e) => setItineraryParam(e.target.value)
 
   return (
-    <UncontrolledCollapse toggler="#toggler">
+    <UncontrolledCollapse  toggler="#toggler" defaultOpen={true}>
       <div className='mb-3'>
         <label className='mb-2' htmlFor="">
           Para onde você vai?
