@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import React from 'react';
 import Home from './pages/Home'
 import Stops from './pages/Stops';
+import '@splidejs/react-splide/css';
 
 const router = createBrowserRouter([
   {

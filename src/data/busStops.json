@@ -4,13 +4,15 @@
     "name": "Alto da Boa Vista",
     "neighborhood":"Boa Vista",
     "description": "",
-    "coordenates": [-7.9834175636075715, -38.31506194376145]
+    "gender": "m",
+    "coordenates": [-7.985531932767213, -38.312883949632685]
   },
   {
     "id" : 2,
     "name": "Parada do Cristo",
     "neighborhood":"Alto do Bom Jesus",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.988877121336048, -38.306563588281904]
   },
   {
@@ -18,13 +20,15 @@
     "name": "Lima Calçados",
     "neighborhood":"Centro",
     "description": "",
+    "gender": "n",
     "coordenates": [-7.990342533652424, -38.30154035946517]
   },
   {
     "id" : 4,
-    "name": "Secretaria de Educação",
+    "name": "Sec. de Educação",
     "neighborhood":"Centro",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.991267512503994, -38.29815201693592]
   },
   {
@@ -32,6 +36,7 @@
     "name": "FAFOPST",
     "neighborhood":"N. Sra. da Conceição",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.990338564330308, -38.292249708281624]
   },
   {
@@ -39,6 +44,7 @@
     "name": "Santa",
     "neighborhood":"N. Sra da Conceição",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.987457195721979, -38.290957686493265]
   },
   {
@@ -46,6 +52,7 @@
     "name": "Mercantil Santana",
     "neighborhood":"N. Sra. da Conceição",
     "description": "",
+    "gender": "m",
     "coordenates": [-7.984738208350752, -38.29021521141139]
   },
   {
@@ -53,6 +60,7 @@
     "name": "DJAFarma",
     "neighborhood":"São Cristovão",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.983318793154923, -38.289768359446455]
   },
   {
@@ -60,6 +68,7 @@
     "name": "Mercadinho Miranda",
     "neighborhood":"Bairro Universitário",
     "description": "",
+    "gender": "m",
     "coordenates": [-7.980052196985137, -38.29158731968407]
   },
   {
@@ -67,6 +76,7 @@
     "name": "Curral",
     "neighborhood":"Bairro Universitário",
     "description": "",
+    "gender": "m",
     "coordenates": [-7.975165409556811, -38.2893503879759]
   },
   {
@@ -74,6 +84,7 @@
     "name": "Igreja Multirão",
     "neighborhood":"Bairro Universitário",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.9731041886739735, -38.286671161295246]
   },
   {
@@ -81,6 +92,7 @@
     "name": "UAST-BD",
     "neighborhood":"Fazenda Saco",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.956269571017419, -38.29513674715397]
   },
   {
@@ -88,6 +100,7 @@
     "name": "UAST-B2",
     "neighborhood":"Fazenda Saco",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.955622509342785, -38.297008152568836]
   },
   {
@@ -95,6 +108,7 @@
     "name": "Mercado JK",
     "neighborhood":"IPSEP",
     "description": "",
+    "gender": "m",
     "coordenates": [-7.990130907590722, -38.28523991977569]
   },
   {
@@ -102,6 +116,7 @@
     "name": "Antiga COBAL",
     "neighborhood":"IPSEP",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.986957464302057, -38.28448972487721]
   },
   {
@@ -109,6 +124,7 @@
     "name": "Oficina São José",
     "neighborhood":"IPSEP",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.983532142304565, -38.283453118966456]
   },
   {
@@ -116,13 +132,15 @@
     "name": "BR-232",
     "neighborhood":"BR",
     "description": "",
-    "coordenates": [-7.982197696653822, -38.29484873914025]
+    "gender": "f",
+    "coordenates": [-7.98243486035109, -38.286069609677114]
   },
   {
     "id" : 18,
     "name": "Ed. Jardim da Serra",
     "neighborhood":"AABB",
     "description": "",
+    "gender": "m",
     "coordenates": [-7.993320650919621, -38.28744272081509]
   },
   {
@@ -130,6 +148,7 @@
     "name": "Vila Saúde",
     "neighborhood":"AABB",
     "description": "",
+    "gender": "m",
     "coordenates": [-7.990839598813662, -38.290984088282016]
   },
   {
@@ -137,6 +156,7 @@
     "name": "Pousada",
     "neighborhood":"Borborema",
     "description": "Posto Pde Cícero",
+    "gender": "f",
     "coordenates": [-7.98140932487319, -38.30526092133969]
   },
   {
@@ -144,6 +164,7 @@
     "name": "Oliveira Construções",
     "neighborhood":"Alto do Bom Jesus",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.984362600146938, -38.30682691465275]
   },
   {
@@ -151,19 +172,22 @@
     "name": "Acad. da Cidade",
     "neighborhood":"Alto do Bom Jesus",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.986993730337392, -38.31024271349652]
   },
   {
     "id" : 23,
     "name": "Praça Vermelha",
     "neighborhood":"N. Sra da Conceição",
-    "description": "wrong coordenates",
-    "coordenates": [-7.981954188431991, -38.28975992880887]
+    "description": "",
+    "gender": "f",
+    "coordenates": [-7.9891719888675325, -38.29166979322726]
   },
   {
     "id" : 24,
     "name": "Av. Triunfo",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.981954188431991, -38.28975992880887]
   },
   {
@@ -171,19 +195,22 @@
     "name": "Posto VISA",
     "neighborhood":"CAGEP",
     "description": "",
+    "gender": "m",
     "coordenates": [-7.981753242624057, -38.29470173233299]
   },
   {
     "id" : 26,
     "name": "Mercadinho o Bom Ladrão",
     "neighborhood":"São Cristóvão",
-    "description": "wrong coordenates",
-    "coordenates": [-7.981954188431991, -38.28975992880887]
+    "description": "",
+    "gender": "m",
+    "coordenates": [-7.98218313575884, -38.29484953570952]
   },
   {
     "id" : 27,
     "name": "Compesa",
     "description": "",
+    "gender": "f",
     "coordenates": [-7.989187791251998, -38.291396767402716]
   },
   {
@@ -191,13 +218,15 @@
     "name": "Mercado Público",
     "neighborhood":"Centro",
     "description": "",
+    "gender": "m",
     "coordenates": [-7.990060995833078, -38.30206775931629]
   },
   {
     "id" : 29,
     "name": "Malhada",
     "neighborhood":"Malhada",
-    "description": "wrong coordenates",
-    "coordenates": [-7.981954188431991, -38.28975992880887]
+    "description": "",
+    "gender": "f",
+    "coordenates": [-7.9839186340180515, -38.31501347116403]
   }
 ]

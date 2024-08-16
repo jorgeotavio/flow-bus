@@ -14,6 +14,13 @@ export const iconPinGreen = L.icon({
   popupAnchor: [0, -32],
 });
 
+export const iconPinUser = L.icon({
+  iconUrl: '/assets/pin-current-pos.png',
+  iconSize: [20, 20],
+  iconAnchor: [15, 10],
+  popupAnchor: [0, -32],
+});
+
 export const iconPinRed = L.icon({
   iconUrl: '/assets/pin-red.png',
   iconSize: [25, 31.82],

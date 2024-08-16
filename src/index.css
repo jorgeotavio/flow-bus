@@ -9,3 +9,15 @@
   height: 100vh;
   background-color: black;
 }
+
+.splide__slide {
+  width: calc(100% / 1.5); /* Configura a largura de cada slide para 1.5 */
+  height: 100%;
+}
+
+@media (max-width: 998px) {
+  .splide__slide {
+    width: calc(100% / 1.5); /* Configura a largura de cada slide para 1.5 */
+    height: 100%;
+  }
+}
