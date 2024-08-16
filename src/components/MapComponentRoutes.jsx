@@ -17,6 +17,9 @@ function MapComponentBaseRoutes() {
         waypoints: currentWaypoints.map(w => L.latLng(w)),
         routeWhileDragging: false,
         show: false,
+        lineOptions: {
+          styles: [{ color: '#083FA6', weight: 4 }]
+        },
         createMarker: function(i, wp) {
           return L.marker(wp.latLng, {
             draggable: false,

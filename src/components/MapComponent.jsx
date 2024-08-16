@@ -8,11 +8,11 @@ import useBusStops from '../hooks/useBusStops';
 import useItineraries from '../hooks/useItineraries';
 import MapComponentBase from './MapComponentBase';
 import MapComponentBaseRoutes from './MapComponentRoutes';
-import { iconPin } from './icons';
+import { iconPin, iconPinRed } from './icons';
 
 const MapComponent = () => {
   const { busStops } = useBusStops();
-  const { setBusStopParam } = useCurrentBusStop();
+  const { setBusStopParam, currentBusStop } = useCurrentBusStop();
   const { currentWaypoints } = useItineraries();
 
   return (
@@ -30,9 +30,8 @@ const MapComponent = () => {
             }
           }}
           position={stop.coordenates}
-          icon={iconPin}
+          icon={currentBusStop && currentBusStop.id == stop.id ? iconPinRed : iconPin}
           >
-          <Popup>{stop.name}</Popup>
         </Marker>
       ))}
       <MapComponentBase />

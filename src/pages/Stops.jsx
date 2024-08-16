@@ -1,17 +1,18 @@
 import React from "react";
 import MapComponent from "../components/MapComponent";
 import BusStopList from "../components/BusStopList";
-import { Badge, Card, CardBody, Col } from "reactstrap";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { Card, CardBody, Col } from "reactstrap";
+import { useNavigate } from "react-router-dom";
 import ShowStopData from "../components/ShowStopData";
-import { ArrowLeft, CaretDown } from "@phosphor-icons/react";
+import { ArrowLeft, CaretDown, X } from "@phosphor-icons/react";
 import useItineraries from "../hooks/useItineraries";
 import ShowItineraries from "../components/ShowItineraries";
-import { useBusTimes } from "../hooks/useBusTimes";
+import useCurrentBusStop from "../hooks/useCurrentBusStop";
 
 const Stops = () => {
   const navigate = useNavigate();
   const { currentItinerary } = useItineraries();
+  const { currentBusStop } = useCurrentBusStop();
 
   const handleSelect = (stop) => {
     console.log("Parada selecionada:", stop);
@@ -43,12 +44,24 @@ const Stops = () => {
           </CardBody>
         </Card>
       </Col>
-      <div className="fixed-bottom p-2">
-        <ShowStopData />
-        {currentItinerary && (
-          <ShowItineraries />
+      {(currentItinerary || currentBusStop) && (
+          <div className="fixed-bottom p-2">
+            <Card>
+              <CardBody>
+                <div className="d-flex justify-content-end cursor-pointer">
+                  <X size={24} onClick={() => navigate("/bus-stops")} />
+                </div>
+                {
+                 currentItinerary ? (
+                   <ShowItineraries />
+                 ) : (
+                  currentBusStop && <ShowStopData />
+                 )
+                }
+              </CardBody>
+            </Card>
+          </div>
         )}
-      </div>
     </div>
   );
 };
