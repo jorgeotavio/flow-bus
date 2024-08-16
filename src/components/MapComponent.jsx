@@ -12,21 +12,11 @@ import { iconPin } from './icons';
 
 const MapComponent = () => {
   const { busStops } = useBusStops();
-  const { currentBusStop, setBusStopParam } = useCurrentBusStop();
-  const position = useUserCurrentPosition();
+  const { setBusStopParam } = useCurrentBusStop();
   const { currentWaypoints } = useItineraries();
 
-  // let center = position ? [position.latitude, position.longitude] : [-7.9820696461839695, -38.29091520605652];
-  let center = [-7.9628707731104935, -38.29134606557274];
-  let zoom = 13;
-
-  if (currentBusStop) {
-    center = currentBusStop.coordenates;
-    zoom = 16;
-  }
-
   return (
-    <MapContainer center={center} zoom={zoom} style={{ height: '100vh', width: '100vw' }}>
+    <MapContainer style={{ height: '100vh', width: '100vw' }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; OpenStreetMap contributors"
@@ -45,7 +35,7 @@ const MapComponent = () => {
           <Popup>{stop.name}</Popup>
         </Marker>
       ))}
-      <MapComponentBase center={center} zoom={zoom} />
+      <MapComponentBase />
       <MapComponentBaseRoutes />
     </MapContainer>
   );

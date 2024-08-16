@@ -14,7 +14,7 @@ const BusStopList = () => {
   const onChangeTo = useCallback((value) => {
     searchParams.set('to', value)
     setSearchParams(searchParams)
-  }, [location, toValue])
+  }, [location])
 
   const onChangeDestination = (e) => setItineraryParam(e.target.value)
 
@@ -49,7 +49,7 @@ const BusStopList = () => {
           <option value="">Selecione o Itinerário</option>
           {itineraries.filter(i => toValue == 'uast' ? i.to == 'uast' : i.to != 'uast').map((iti, key) => (
             <option key={key} value={iti.id}>
-              {iti.name}
+              {iti.fromStop.name} -- {iti.toStop.name}
             </option>
           ))}
         </Input>

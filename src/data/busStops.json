@@ -1,139 +1,162 @@
 [
   {
     "id" : 1,
-    "name": "Alto da Boa Vista (Boa Vista )",
+    "name": "Alto da Boa Vista",
+    "neighborhood":"Boa Vista",
     "description": "",
     "coordenates": [-7.9834175636075715, -38.31506194376145]
   },
   {
     "id" : 2,
-    "name": "Parada do Cristo (Alto do Bom Jesus)",
+    "name": "Parada do Cristo",
+    "neighborhood":"Alto do Bom Jesus",
     "description": "",
     "coordenates": [-7.988877121336048, -38.306563588281904]
   },
   {
     "id" : 3,
-    "name": "Lima Calçados (Centro)",
+    "name": "Lima Calçados",
+    "neighborhood":"Centro",
     "description": "",
     "coordenates": [-7.990342533652424, -38.30154035946517]
   },
   {
     "id" : 4,
-    "name": "Secretaria de Educação (Centro)",
+    "name": "Secretaria de Educação",
+    "neighborhood":"Centro",
     "description": "",
     "coordenates": [-7.991267512503994, -38.29815201693592]
   },
   {
     "id" : 5,
-    "name": "FAFOPST (N. Sra. da Conceição)",
+    "name": "FAFOPST",
+    "neighborhood":"N. Sra. da Conceição",
     "description": "",
     "coordenates": [-7.990338564330308, -38.292249708281624]
   },
   {
     "id" : 6,
-    "name": "Santa (N. Sra da Conceição)",
+    "name": "Santa",
+    "neighborhood":"N. Sra da Conceição",
     "description": "",
     "coordenates": [-7.987457195721979, -38.290957686493265]
   },
   {
     "id" : 7,
-    "name": "Mercantil Santana (N. Sra. da Conceição)",
+    "name": "Mercantil Santana",
+    "neighborhood":"N. Sra. da Conceição",
     "description": "",
     "coordenates": [-7.984738208350752, -38.29021521141139]
   },
   {
     "id" : 8,
-    "name": "DJAFarma (São Cristovão)",
+    "name": "DJAFarma",
+    "neighborhood":"São Cristovão",
     "description": "",
     "coordenates": [-7.983318793154923, -38.289768359446455]
   },
   {
     "id" : 9,
-    "name": "Mercadinho Miranda (Bairro Universitário)",
+    "name": "Mercadinho Miranda",
+    "neighborhood":"Bairro Universitário",
     "description": "",
     "coordenates": [-7.980052196985137, -38.29158731968407]
   },
   {
     "id" : 10,
-    "name": "Curral (Bairro Universitário)",
+    "name": "Curral",
+    "neighborhood":"Bairro Universitário",
     "description": "",
     "coordenates": [-7.975165409556811, -38.2893503879759]
   },
   {
     "id" : 11,
-    "name": "Igreja Multirão (Bairro Universitário)",
+    "name": "Igreja Multirão",
+    "neighborhood":"Bairro Universitário",
     "description": "",
     "coordenates": [-7.9731041886739735, -38.286671161295246]
   },
   {
     "id" : 12,
-    "name": "UAST - Bloco D (Fazenda Saco)",
+    "name": "UAST-BD",
+    "neighborhood":"Fazenda Saco",
     "description": "",
     "coordenates": [-7.956269571017419, -38.29513674715397]
   },
   {
     "id" : 13,
-    "name": "UAST - Bloco 02 (Fazenda Saco)",
+    "name": "UAST-B2",
+    "neighborhood":"Fazenda Saco",
     "description": "",
     "coordenates": [-7.955622509342785, -38.297008152568836]
   },
   {
     "id" : 14,
-    "name": "Mercado JK (IPSEP)",
+    "name": "Mercado JK",
+    "neighborhood":"IPSEP",
     "description": "",
     "coordenates": [-7.990130907590722, -38.28523991977569]
   },
   {
     "id" : 15,
-    "name": "Antiga COBAL (IPSEP)",
+    "name": "Antiga COBAL",
+    "neighborhood":"IPSEP",
     "description": "",
     "coordenates": [-7.986957464302057, -38.28448972487721]
   },
   {
     "id" : 16,
-    "name": "Oficina São José (IPSEP)",
+    "name": "Oficina São José",
+    "neighborhood":"IPSEP",
     "description": "",
     "coordenates": [-7.983532142304565, -38.283453118966456]
   },
   {
     "id" : 17,
     "name": "BR-232",
+    "neighborhood":"BR",
     "description": "",
     "coordenates": [-7.982197696653822, -38.29484873914025]
   },
   {
     "id" : 18,
-    "name": "Edifícil Jardim da Serra",
+    "name": "Ed. Jardim da Serra",
+    "neighborhood":"AABB",
     "description": "",
     "coordenates": [-7.993320650919621, -38.28744272081509]
   },
   {
     "id" : 19,
     "name": "Vila Saúde",
+    "neighborhood":"AABB",
     "description": "",
     "coordenates": [-7.990839598813662, -38.290984088282016]
   },
   {
     "id" : 20,
-    "name": "Pousada (Borborema)",
+    "name": "Pousada",
+    "neighborhood":"Borborema",
     "description": "Posto Pde Cícero",
     "coordenates": [-7.98140932487319, -38.30526092133969]
   },
   {
     "id" : 21,
-    "name": "Oliveira Construções (Alto do Bom Jesus)",
+    "name": "Oliveira Construções",
+    "neighborhood":"Alto do Bom Jesus",
     "description": "",
     "coordenates": [-7.984362600146938, -38.30682691465275]
   },
   {
     "id" : 22,
-    "name": "Academia da Cidade (Alto do Bom Jesus)",
+    "name": "Academia da Cidade",
+    "neighborhood":"Alto do Bom Jesus",
     "description": "",
     "coordenates": [-7.986993730337392, -38.31024271349652]
   },
   {
     "id" : 23,
-    "name": "Praça Vermelha (N. Sra da Conceição)",
+    "name": "Praça Vermelha",
+    "neighborhood":"N. Sra da Conceição",
     "description": "wrong coordenates",
     "coordenates": [-7.981954188431991, -38.28975992880887]
   },
@@ -145,13 +168,15 @@
   },
   {
     "id" : 25,
-    "name": "Posto VISA (CAGEP)",
+    "name": "Posto VISA",
+    "neighborhood":"CAGEP",
     "description": "",
     "coordenates": [-7.981753242624057, -38.29470173233299]
   },
   {
     "id" : 26,
-    "name": "Mercadinho o Bom Ladrão (São Cristóvão)",
+    "name": "Mercadinho o Bom Ladrão",
+    "neighborhood":"São Cristóvão",
     "description": "wrong coordenates",
     "coordenates": [-7.981954188431991, -38.28975992880887]
   },
@@ -163,13 +188,15 @@
   },
   {
     "id" : 28,
-    "name": "Mercado Público (Centro)",
+    "name": "Mercado Público",
+    "neighborhood":"Centro",
     "description": "",
     "coordenates": [-7.990060995833078, -38.30206775931629]
   },
   {
     "id" : 29,
     "name": "Malhada",
+    "neighborhood":"Malhada",
     "description": "wrong coordenates",
     "coordenates": [-7.981954188431991, -38.28975992880887]
   }

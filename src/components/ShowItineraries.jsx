@@ -35,7 +35,6 @@ function ShowItineraries() {
             {currentItinerary.waypoints.map((w, key) => (
               <div key={w.id}>
                 <Badge className="me-2 d-inline-block text-dark border border-dark" color="white">
-                  {" "}
                   {hour && upadeMinutes(hour, key * 5)} - {w.name}
                 </Badge>
               </div>

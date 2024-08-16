@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import MapComponent from "../components/MapComponent";
 import BusStopList from "../components/BusStopList";
 import { Badge, Card, CardBody, Col } from "reactstrap";
@@ -7,10 +7,12 @@ import ShowStopData from "../components/ShowStopData";
 import { ArrowLeft, CaretDown } from "@phosphor-icons/react";
 import useItineraries from "../hooks/useItineraries";
 import ShowItineraries from "../components/ShowItineraries";
+import { useBusTimes } from "../hooks/useBusTimes";
 
 const Stops = () => {
   const navigate = useNavigate();
   const { currentItinerary } = useItineraries();
+
   const handleSelect = (stop) => {
     console.log("Parada selecionada:", stop);
   };

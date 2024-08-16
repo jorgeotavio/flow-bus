@@ -1,17 +1,26 @@
-import { useNavigate } from "react-router-dom";
-import { Card, CardBody } from "reactstrap";
-import { MapPinLine, X } from "@phosphor-icons/react";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { Badge, Card, CardBody } from "reactstrap";
+import { ArrowRight, Bus, MapPinLine, X } from "@phosphor-icons/react";
 import useCurrentBusStop from "../hooks/useCurrentBusStop";
+import { useBusTimes } from "../hooks/useBusTimes";
+import { isEmpty } from "lodash";
 
 const ShowStopData = () => {
-  const { busStop } = useCurrentBusStop();
+  const { currentBusStop } = useCurrentBusStop();
   const navigate = useNavigate();
 
-  return busStop ? (
+  const [searchParams] = useSearchParams();
+  const stopId = searchParams.get("bus-stop");
+  const times = useBusTimes(stopId);
+
+  return currentBusStop ? (
     <Card>
       <CardBody>
         <div className="d-flex justify-content-between mb-2 mb-lg-4">
-          <h3 className="d-flex align-items-center"><MapPinLine className="me-3" size={24} />{busStop.name}</h3>
+          <h3 className="d-flex align-items-center">
+            <MapPinLine className="me-3" size={24} />
+            Partindo de {currentBusStop.name}
+          </h3>
           <div
             className="cursor-pointer"
             onClick={() => navigate("/bus-stops")}
@@ -24,32 +33,35 @@ const ShowStopData = () => {
             className="list-unstyled row"
             style={{ maxHeight: "300px", overflowY: "auto" }}
           >
-            {/* {busStop.destinations.map((destination, key) => (
-              <li key={key} className="col-12 col-lg-3 mb-3">
-                <Card>
-                  <CardBody>
-                    <div className="d-flex justify-content-between">
-                      <div className="d-flex align-items-center">
-                        <div>
-                          <Clock size={16} />
+            {!isEmpty(times) &&
+              times.map((time, key) => (
+                <li key={key} className="col-12 col-lg-3 mb-3">
+                  <Card>
+                    <CardBody>
+                      <div className="d-flex justify-content-between">
+                        <div className="d-flex align-items-center">
+                          <p className="mb-0">
+                            <b>
+                              {currentBusStop.name}
+                            </b>
+                            <ArrowRight className="mx-2" />
+                            <b>
+                              {time.itinerary.toStop.name}
+                            </b>
+                          </p>
                         </div>
-                        <h5 className="ms-2 mb-0">{destination.hour}</h5>
                       </div>
-                      {key === 0 && <Badge color="success"> <Star weight="fill" size={12} /> Próximo</Badge>}
-                    </div>
-                    <div className="d-flex align-items-center mt-2">
-                      <span className="mb-0">{busStop.name}</span>
-                      <div className="mx-3">
-                        <ArrowRight size={16} />
+                      <div className="d-flex align-items-center mt-2">
+                        <span className="mb-0">
+                          {time.hours.map((h) => (
+                            <Badge className="me-1">{h}</Badge>
+                          ))}
+                        </span>
                       </div>
-                      <span className="mb-0">
-                        {filterById(destination.to).name}
-                      </span>
-                    </div>
-                  </CardBody>
-                </Card>
-              </li>
-            ))} */}
+                    </CardBody>
+                  </Card>
+                </li>
+              ))}
           </ul>
         </div>
       </CardBody>
