@@ -88,16 +88,8 @@
     "coordenates": [-7.9731041886739735, -38.286671161295246]
   },
   {
-    "id" : 12,
-    "name": "UAST-BD",
-    "neighborhood":"Fazenda Saco",
-    "description": "",
-    "gender": "f",
-    "coordenates": [-7.956269571017419, -38.29513674715397]
-  },
-  {
     "id" : 13,
-    "name": "UAST-B2",
+    "name": "UAST",
     "neighborhood":"Fazenda Saco",
     "description": "",
     "gender": "f",

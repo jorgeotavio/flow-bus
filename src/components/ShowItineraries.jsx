@@ -67,7 +67,7 @@ function ShowItineraries() {
         </div>
       </div>
       <div className="overflow-auto py-2">
-        <div className="d-flex" style={{ whiteSpace: "nowrap" }}>
+        <div className="d-flex align-items-center" style={{ whiteSpace: "nowrap" }}>
           {currentItinerary.waypoints.map((w, key) => (
             <div key={w.id}>
               <Badge
