@@ -1,3 +1,7 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -20,9 +24,9 @@
   border-radius: 10px;
 }
 
-@media (max-width: 998px) {
-  .splide__slide {
-    width: calc(100% / 1.5); /* Configura a largura de cada slide para 1.5 */
-    height: 100%;
+@media (max-width: 768px) {
+  .bg-girl {
+    background-image: url('/assets/in-the-bus-stop.jpg');
+    background-position: 25% 30%;
   }
 }
