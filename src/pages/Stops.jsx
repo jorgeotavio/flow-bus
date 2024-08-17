@@ -16,7 +16,7 @@ const Stops = () => {
       <div className="h-100 w-100">
         <MapComponent />
       </div>
-      <Col className="fixed-top p-2" xs="12" md="5">
+      <Col className="fixed-top p-2 mx-auto" xs="12" md="7">
         <Card>
           <CardBody>
             <BusStopList />
@@ -24,19 +24,18 @@ const Stops = () => {
         </Card>
       </Col>
       {(currentItinerary || currentBusStop) && (
-          <div className="fixed-bottom p-2">
-            <Card>
-              <CardBody>
-                {currentItinerary ? (
-                   <ShowItineraries />
-                 ) : (
-                  currentBusStop && <ShowStopData />
-                 )
-                }
-              </CardBody>
-            </Card>
-          </div>
-        )}
+        <Col className="fixed-bottom p-2 mx-auto" xs="12" md="7">
+          <Card>
+            <CardBody>
+              {currentItinerary ? (
+                <ShowItineraries />
+              ) : (
+                currentBusStop && <ShowStopData />
+              )}
+            </CardBody>
+          </Card>
+        </Col>
+      )}
     </div>
   );
 };
