@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="d-flex align-items-center bg-girl">
       <Col
-        className="d-flex align-items-center px-2"
+        className="d-flex align-items-center px-2 px-lg-5"
         xs="12"
         md="5"
         style={{ height: "100vh" }}

@@ -8,8 +8,8 @@ const Home = () => {
 
   return (
     <div className="d-flex align-items-center bg-girl">
-      <Col className="d-flex align-items-center px-2" xs="12" md="5" style={{ height: '100vh' }}>
-        <Card className="border border-lg-none">
+      <Col className="d-flex align-items-center px-2 px-lg-5" xs="12" md="5" style={{ height: '100vh' }}>
+        <Card className="w-100">
           <CardBody>
             <div className="px-0 text-center">
               <div className="d-flex align-items-center justify-content-center mb-3">
