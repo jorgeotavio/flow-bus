@@ -20,7 +20,7 @@ function MapComponentBase() {
   }
 
   if (currentItinerary) {
-    center = [-7.9628707731104935, -38.29134606557274];
+    center = [-7.985902720672017, -38.2955573422527];
     zoom = 13;
   }
 

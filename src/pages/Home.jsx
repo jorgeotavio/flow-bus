@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody, Col, Container, Row } from 'reactstrap';
+import { Card, CardBody, Col } from 'reactstrap';
 import { ArrowRight, Info, Van } from '@phosphor-icons/react';
 import { useNavigate } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ const Home = () => {
           <p>Nesse app você terá acesso a localização dos pontos de ônibus e os horários dos itinerários da UAST-UFRPE.</p>
           <ul className='list-unstyled'>
             <li>
-              <Card className='cursor-pointer' onClick={() => navigate('bus-stops')}>
+              <Card className='cursor-pointer' onClick={() => navigate('/bus-stops')}>
                 <CardBody className='d-flex align-items-center justify-content-between'>
                   <div className='d-flex align-items-center'>
                     <Van size={24} />
@@ -27,7 +27,7 @@ const Home = () => {
               </Card>
             </li>
             <li className='mt-3'>
-              <Card className='cursor-pointer' onClick={() => navigate('bus-stops')}>
+              <Card className='cursor-pointer' onClick={() => navigate('/bus-stops')}>
                 <CardBody className='d-flex align-items-center justify-content-between'>
                   <div className='d-flex align-items-center'>
                     <Info size={24} />

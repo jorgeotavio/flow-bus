@@ -15,6 +15,11 @@
   height: 100%;
 }
 
+.badge {
+  padding: 0.25rem 1rem;
+  border-radius: 10px;
+}
+
 @media (max-width: 998px) {
   .splide__slide {
     width: calc(100% / 1.5); /* Configura a largura de cada slide para 1.5 */
