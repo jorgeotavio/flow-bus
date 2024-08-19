@@ -23,25 +23,25 @@ const About = () => {
             </span>
             </div>
             <h1>Sobre o Flow Bus</h1>
-            <p>
+            <p className="fs-7">
               A idéia desse aplicativo é o a busca de forma simplificada pelos
               pontos de ônibus da UAST-UFRPE. Nele você consegue selecionar um
               ponto ou os itinerários e ter uma base dos horários que os
               coletivos irão passar.
             </p>
-            <p className="text-align-justify">
+            <p className="text-align-justify fs-7">
               Este app foi desenvolvido para a matéria de <b> IHM </b>
               (Interfaces Homem Máquina), do curso de BSI (Bacharelado de
               Sistemas de Informação), pelo aluno{" "}
               <b> Jorge Luiz Otávio da Silva Brito</b>.
             </p>
-            <p>
+            <p className="fs-7">
               Se tem ideias ou observações para melhoria desse projeto, mande um
               e-mail para{" "}
               <a href="mailto:jorge.otavio@ufrpe.br">jorge.otavio@ufrpe.br</a>,
               tentarei responder o mais breve possível.
             </p>
-            <p>
+            <p className="fs-7">
               Caso precise acessar os dados de itinerários oficiais da UAST,
               acesse <a href="https://www.uast.ufrpe.br/br/onibus-itinerario-23" target="_blank">
                 Dados dos itinerários oficiais

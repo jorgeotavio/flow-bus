@@ -41,7 +41,7 @@ const ShowStopData = () => {
             times.map((time, key) => (
               <li className="mb-2 col-12 col-lg-6" key={key}>
                 <Card>
-                  <CardBody className="p-2">
+                  <CardBody className="p-2 d-flex flex-column">
                     <div className="d-flex justify-content-between">
                       <div className="d-flex align-items-center">
                         <h6 className="mb-2">
@@ -54,7 +54,7 @@ const ShowStopData = () => {
                     <small className="d-flex align-items-center mb-1 fs-7">
                       {time.itinerary.name}{" "}
                     </small>
-                    <div className="d-flex flex-wrap align-items-center mt-2">
+                    <div className="d-flex flex-column mt-2">
                       <ListHours hours={time.hours} />
                     </div>
                   </CardBody>

@@ -6,6 +6,7 @@ import ShowStopData from "../components/ShowStopData";
 import useItineraries from "../hooks/useItineraries";
 import ShowItineraries from "../components/ShowItineraries";
 import useCurrentBusStop from "../hooks/useCurrentBusStop";
+import ShowNearestBusStop from "../components/ShowNearestBusStop";
 
 const Stops = () => {
   const { currentItinerary } = useItineraries();
@@ -36,6 +37,7 @@ const Stops = () => {
           </Card>
         </Col>
       )}
+      <ShowNearestBusStop />
     </div>
   );
 };
