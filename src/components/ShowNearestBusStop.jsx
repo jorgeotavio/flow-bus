@@ -4,11 +4,13 @@ import useNearestBusStop from "../hooks/useNearestBusStop";
 import { MapPin, MapPinArea } from "@phosphor-icons/react";
 import { useSearchParams } from "react-router-dom";
 import usePersistentState from "../hooks/usePersistentState";
+import useUserCurrentPosition from "../hooks/useUserCurrentPosition";
 
 const ShowNearestBusStop = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [searchParams, setSearchParams] = useSearchParams()
   const nearestBusStop = useNearestBusStop();
+  const { hasGeoPermission } = useUserCurrentPosition()
   const [showTips, setShowTips] = usePersistentState('show-bus-stop-tips', true)
   const chekRef = useRef(null)
 
@@ -24,7 +26,7 @@ const ShowNearestBusStop = () => {
   })
 
   return (
-    <Modal isOpen={isOpen && showTips} centered={true} toggle={toggle}>
+    <Modal isOpen={isOpen && showTips && hasGeoPermission} centered={true} toggle={toggle}>
       <ModalHeader toggle={toggle}>
         <p className="fs-5 mb-0">
           <MapPin className="mb-1" size={22} />

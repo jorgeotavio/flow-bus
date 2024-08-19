@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import useBusStops from './useBusStops';
-import useUserCurrentPosition from './useUserCurrentPosition';
+import { useState, useEffect } from "react";
+import useBusStops from "./useBusStops";
+import useUserCurrentPosition from "./useUserCurrentPosition";
 
 function haversineDistance(coords1, coords2) {
   const toRad = (x) => (x * Math.PI) / 180;
@@ -21,8 +21,8 @@ function haversineDistance(coords1, coords2) {
 
 function useNearestBusStop() {
   const [nearestBusStop, setNearestBusStop] = useState(null);
-  const userPosition = useUserCurrentPosition()
-  const { busStops } = useBusStops()
+  const { position: userPosition } = useUserCurrentPosition();
+  const { busStops } = useBusStops();
 
   useEffect(() => {
     if (!userPosition) {
@@ -34,7 +34,7 @@ function useNearestBusStop() {
     let minDistance = Infinity;
 
     busStops.forEach((stop) => {
-      if(stop.coordenates != null) {
+      if (stop.coordenates != null) {
         const distance = haversineDistance(userPosition, stop.coordenates);
         if (distance < minDistance) {
           minDistance = distance;
