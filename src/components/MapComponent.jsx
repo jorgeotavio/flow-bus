@@ -1,7 +1,5 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-
+import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet';
 import useCurrentBusStop from '../hooks/useCurrentBusStop';
 import useBusStops from '../hooks/useBusStops';
 import useItineraries from '../hooks/useItineraries';
@@ -31,6 +29,9 @@ const MapComponent = () => {
           position={stop.coordenates}
           icon={currentBusStop && currentBusStop.id == stop.id ? iconPinRed : iconPin}
           >
+            <Tooltip direction='top' onClick={() => {
+              setBusStopParam(stop.id)
+            }} offset={[-10, -30]} permanent>{stop.name}</Tooltip>
         </Marker>
       ))}
       <MapComponentBase />

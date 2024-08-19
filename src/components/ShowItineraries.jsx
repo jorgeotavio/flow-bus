@@ -1,30 +1,22 @@
-import { Badge, Card, CardBody } from "reactstrap";
+import { Badge } from "reactstrap";
 import useItineraries from "../hooks/useItineraries";
 import { useEffect, useState } from "react";
 import useUpdateHour from "../hooks/useUpdateHour";
-import { ArrowRight, Clock, Info, MapPin, Star } from "@phosphor-icons/react";
+import { ArrowRight, MapPin, Star } from "@phosphor-icons/react";
 import CloseDataShow from "./CloseDataShow";
 import useNextBusTime from "../hooks/useNextBusTime";
 import ListHours from "./ListHours";
-import FinishedItineraryMessage from "./FinishedItineraryMessage";
 
 function ShowItineraries() {
   const { currentItinerary } = useItineraries();
   console.log(currentItinerary.hours[0]);
   const { getNextBusTime } = useNextBusTime();
-  const [hour, setHour] = useState(currentItinerary.hours[0]);
+  const [hour, setHour] = useState();
   const { upadeMinutes } = useUpdateHour();
 
   useEffect(() => {
-    setHour(currentItinerary.hours[0]);
+    setHour(getNextBusTime(currentItinerary.hours));
   }, [currentItinerary]);
-
-  const hours = currentItinerary.hours.filter((h, i) => {
-    const currentIdenx = currentItinerary.hours.indexOf(
-      getNextBusTime(currentItinerary.hours)
-    );
-    return currentIdenx > -1 && currentIdenx <= i;
-  });
 
   return (
     <div>
@@ -53,7 +45,9 @@ function ShowItineraries() {
               >
                 {hour && upadeMinutes(hour, key * 5)} - {w.name}
               </Badge>
-              <ArrowRight className="mx-2" />
+              {key < currentItinerary.waypoints.length - 1 &&
+                <ArrowRight className="mx-2" />
+              }
             </div>
           ))}
         </div>

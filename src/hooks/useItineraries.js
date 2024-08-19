@@ -39,9 +39,11 @@ const useItineraries = () => {
 
   const currentWaypoints = useMemo(() => {
     if (currentItinerary) {
-      return currentItinerary.waypoints.map(w => w.coordenates)
+      return currentItinerary.waypoints.map(w => ({...w}))
     } return null
   }, [itineraryId])
+  console.log(currentWaypoints);
+
 
   return {
     itineraries,

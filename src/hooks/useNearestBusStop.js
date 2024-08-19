@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import useBusStops from "./useBusStops";
 import useUserCurrentPosition from "./useUserCurrentPosition";
+import { useSearchParams } from "react-router-dom";
 
 function haversineDistance(coords1, coords2) {
   const toRad = (x) => (x * Math.PI) / 180;
@@ -22,6 +23,7 @@ function haversineDistance(coords1, coords2) {
 function useNearestBusStop() {
   const [nearestBusStop, setNearestBusStop] = useState(null);
   const { position: userPosition } = useUserCurrentPosition();
+  const [searchParams, setSearchParams] = useSearchParams();
   const { busStops } = useBusStops();
 
   useEffect(() => {
@@ -44,7 +46,16 @@ function useNearestBusStop() {
     });
 
     setNearestBusStop(closestStop);
-  }, [userPosition, busStops]);
+  }, [userPosition]);
+
+  useEffect(() => {
+    if (nearestBusStop && nearestBusStop.name === 'UAST') {
+      searchParams.set('to', 'Cidade')
+    } else {
+      searchParams.set('to', 'Uast')
+    }
+    setSearchParams(searchParams)
+  }, [nearestBusStop])
 
   return nearestBusStop;
 }

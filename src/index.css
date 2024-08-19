@@ -28,6 +28,17 @@
   font-size: 0.8rem;
 }
 
+.leaflet-tooltip {
+  border: none;
+  background-color: #0095FF;
+  color: white;
+  opacity: 0;
+}
+
+.leaflet-tooltip::before {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .bg-girl {
     background-image: url('/assets/in-the-bus-stop.jpg');
