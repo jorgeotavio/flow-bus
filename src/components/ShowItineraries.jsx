@@ -5,6 +5,8 @@ import useUpdateHour from "../hooks/useUpdateHour";
 import { ArrowRight, Clock, Info, MapPin, Star } from "@phosphor-icons/react";
 import CloseDataShow from "./CloseDataShow";
 import useNextBusTime from "../hooks/useNextBusTime";
+import ListHours from "./ListHours";
+import FinishedItineraryMessage from "./FinishedItineraryMessage";
 
 function ShowItineraries() {
   const { currentItinerary } = useItineraries();
@@ -35,39 +37,14 @@ function ShowItineraries() {
         </p>
         <CloseDataShow />
       </div>
-      {hours.length === 0 && (
-          <Card className="border-warning my-3">
-            <CardBody className="py-2">
-              <div className="d-flex align-items-center">
-                <Info className="me-2 text-danger" />
-                Esse itinerário finalizou por hoje
-              </div>
-            </CardBody>
-          </Card>
-        )}
-      <div className="overflow-auto py-2">
-       <div>
-          <div className="d-flex" style={{ whiteSpace: "nowrap" }}>
-            {currentItinerary.hours.map((h, key) => (
-              <div key={h}>
-                <Badge
-                  className="me-2 d-flex align-items-center mb-2"
-                  color={getNextBusTime(currentItinerary.hours) == h ? "success" : "secondary"}
-                >
-                  {getNextBusTime(currentItinerary.hours) == h ? (
-                    <Star className="me-1" weight="fill" size={16} />
-                  ) : (
-                    <Clock className="me-1" weight="fill" size={16} />
-                  )}
-                  {h}
-                </Badge>
-              </div>
-            ))}
-          </div>
-        </div>
+      <div>
+        <ListHours hours={currentItinerary.hours} />
       </div>
       <div className="overflow-auto py-2">
-        <div className="d-flex align-items-center" style={{ whiteSpace: "nowrap" }}>
+        <div
+          className="d-flex align-items-center"
+          style={{ whiteSpace: "nowrap" }}
+        >
           {currentItinerary.waypoints.map((w, key) => (
             <div key={w.id}>
               <Badge

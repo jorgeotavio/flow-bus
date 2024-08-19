@@ -1,18 +1,20 @@
 import { useSearchParams } from "react-router-dom";
-import { Badge, Card, CardBody } from "reactstrap";
-import { ArrowRight, Clock, MapPinLine, Star, X } from "@phosphor-icons/react";
+import { Card, CardBody } from "reactstrap";
+import {
+  ArrowRight,
+  MapPinLine,
+} from "@phosphor-icons/react";
 import useCurrentBusStop from "../hooks/useCurrentBusStop";
 import { useBusTimes } from "../hooks/useBusTimes";
 import { isEmpty } from "lodash";
 import CloseDataShow from "./CloseDataShow";
-import useNextBusTime from "../hooks/useNextBusTime";
+import ListHours from "./ListHours";
 
 const ShowStopData = () => {
   const { currentBusStop } = useCurrentBusStop();
   const [searchParams] = useSearchParams();
   const stopId = searchParams.get("bus-stop");
   const { times } = useBusTimes(stopId);
-  const { getNextBusTime } = useNextBusTime();
   console.log(times);
 
   const pred = {
@@ -37,36 +39,23 @@ const ShowStopData = () => {
         >
           {!isEmpty(times) &&
             times.map((time, key) => (
-              <li className="mb-2 col-12 col-lg-4" key={key}>
+              <li className="mb-2 col-12 col-lg-6" key={key}>
                 <Card>
                   <CardBody className="p-2">
                     <div className="d-flex justify-content-between">
                       <div className="d-flex align-items-center">
-                        <p className="mb-0">
-                          <b>
-                            {key + 1} - {currentBusStop.name}
-                          </b>
+                        <h6 className="mb-2">
+                          {currentBusStop.name}
                           <ArrowRight className="mx-2" />
-                          <b>{time.itinerary.toStop.name}</b>
-                        </p>
+                          {time.itinerary.toStop.name}
+                        </h6>
                       </div>
                     </div>
+                    <small className="d-flex align-items-center mb-1 fs-7">
+                      {time.itinerary.name}{" "}
+                    </small>
                     <div className="d-flex flex-wrap align-items-center mt-2">
-                      {time.hours.map((h) => (
-                        <div key={h}>
-                          <Badge
-                            className="me-2 d-flex align-items-center mb-2"
-                            color={getNextBusTime(time.hours) == h ? "success" : "secondary"}
-                          >
-                            {getNextBusTime(time.hours) == h ? (
-                              <Star className="me-1" weight="fill" size={16} />
-                            ) : (
-                              <Clock className="me-1" weight="fill" size={16} />
-                            )}
-                            {h}
-                          </Badge>
-                        </div>
-                      ))}
+                      <ListHours hours={time.hours} />
                     </div>
                   </CardBody>
                 </Card>

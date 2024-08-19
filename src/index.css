@@ -24,6 +24,10 @@
   border-radius: 10px;
 }
 
+.fs-7 {
+  font-size: 0.8rem;
+}
+
 @media (max-width: 768px) {
   .bg-girl {
     background-image: url('/assets/in-the-bus-stop.jpg');

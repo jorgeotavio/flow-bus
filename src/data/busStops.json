@@ -65,7 +65,7 @@
   },
   {
     "id" : 9,
-    "name": "Mercadinho Miranda",
+    "name": "Merc. Miranda",
     "neighborhood":"Bairro Universitário",
     "description": "",
     "gender": "m",
@@ -192,7 +192,7 @@
   },
   {
     "id" : 26,
-    "name": "Mercadinho o Bom Ladrão",
+    "name": "Merc. o Bom Ladrão",
     "neighborhood":"São Cristóvão",
     "description": "",
     "gender": "m",
