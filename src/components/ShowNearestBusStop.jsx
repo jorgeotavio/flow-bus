@@ -15,7 +15,6 @@ const ShowNearestBusStop = () => {
   const chekRef = useRef(null)
 
   const toggle = () => {
-    setShowTips(!chekRef.current.checked)
     setIsOpen(!isOpen)
   };
 
@@ -36,20 +35,19 @@ const ShowNearestBusStop = () => {
       <ModalBody className="text">
         <p className="fs-7">
           Esse é o ponto de ônibus mais próximo a você, veja os próximos
-          horários que um ônibus irá passar.
+          horários que um ônibus irá passar nele.
         </p>
-        <h3 className="my-3 py-3 border border-radius-3 text-center rounded-2">
+        <h3 className="my-3 mb-5 py-3 border border-radius-3 text-center rounded-3">
           <MapPinArea className="mb-1 me-2" />
           {nearestBusStop && nearestBusStop.name}
         </h3>
-        <div className="d-flex align-items-center my-4">
-          <input ref={chekRef} type="checkbox" id="dont-show-bus-stop-tips" />
-          <label className="fs-7 mb-0 ms-3" htmlFor="dont-show-bus-stop-tips">Não mostrar novamente dica de ponto mais próximo, neste aparelho.</label>
-        </div>
-        <div className="d-flex gap-1 justify-content-end">
-          <Button size="sm" color="light" toggle={toggle}>
-            Cancelar
-          </Button>
+        <div className="d-flex gap-4 justify-content-end align-content-center">
+          <label className="text-dark text-decoration-underline" size="sm" onClick={() => {
+            setShowTips(false)
+            setIsOpen(!false)
+          }}>
+            Não mostrar novamente
+          </label>
           <Button size="sm" color="success" onClick={goToNearestBusStop}>
             Ver próximos horários
           </Button>

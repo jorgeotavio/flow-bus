@@ -11,6 +11,7 @@ import {
 } from "@phosphor-icons/react";
 import useCurrentBusStop from "../hooks/useCurrentBusStop";
 import { isEmpty } from "lodash";
+import ModalInfo from "./ModalInfo";
 
 const BusStopList = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,8 +47,8 @@ const BusStopList = () => {
   }, [currentItinerary, currentBusStop]);
 
   useEffect(() => {
-    if(isEmpty(toValue)) {
-      onChangeTo('Uast')
+    if (isEmpty(toValue)) {
+      onChangeTo("Uast");
     }
   }, [location]);
 
@@ -78,6 +79,11 @@ const BusStopList = () => {
         <div className="my-3">
           <label className="mb-2" htmlFor="">
             Para onde você vai?
+            <ModalInfo
+              description={
+                "Selecione a direção que você pretende ir, caso selecione Uast os itinerários serão direcionados para lá."
+              }
+            />
           </label>
           <Row>
             <Col className="cursor-pointer">
@@ -115,6 +121,11 @@ const BusStopList = () => {
         <div className="mt-3">
           <label className="mb-2" htmlFor="">
             Itinerário
+            <ModalInfo
+              description={
+                "Um itinerário é um plano que mostra a ordem dos lugares ou atividades que você vai visitar ou fazer durante uma viagem, incluindo os horários e paradas no caminho."
+              }
+            />
           </label>
           <Input
             type="select"
