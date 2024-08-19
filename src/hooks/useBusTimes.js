@@ -1,25 +1,23 @@
 import { useState, useEffect } from 'react';
 import useItineraries from './useItineraries';
-
-const addMinutes = (time, minutes) => {
-  const [hour, minute] = time.split(':').map(Number);
-  const date = new Date();
-  date.setHours(hour);
-  date.setMinutes(minute + minutes);
-  return date.toTimeString().slice(0, 5);
-};
+import useNextBusTime from './useNextBusTime';
+import { addMinutes, compareTimes } from '../utils';
 
 export const useBusTimes = (busStopId) => {
   const [times, setTimes] = useState([]);
-  const [currentTime, setCurrentTime] = useState('');
-  const { itineraries } = useItineraries()
+  const { itineraries } = useItineraries();
+  const { getNextBusTime } = useNextBusTime()
 
   useEffect(() => {
     if (!busStopId || !itineraries) return;
 
+    const now = new Date();
+    const currentFormattedTime = now.toTimeString().slice(0, 5);
+    console.log(currentFormattedTime);
+
     const stopTimes = itineraries.filter(itinerary => {
-      const { toStop } = itinerary
-      return busStopId != toStop.id
+      const { toStop } = itinerary;
+      return busStopId != toStop.id;
     }).reduce((acc, itinerary) => {
       const stopIndex = itinerary.waypointsIds.indexOf(parseInt(busStopId));
 
@@ -30,18 +28,43 @@ export const useBusTimes = (busStopId) => {
         const data = {
           itinerary,
           hours: [...calculatedTimes]
-        }
-
-        setCurrentTime(calculatedTimes[0])
+        };
 
         acc.push(data);
       }
 
       return acc;
-    }, []);
+    }, [])
 
-    setTimes(stopTimes);
+    const futureTimes = [];
+    const pastTimes = [];
+
+    stopTimes.forEach(item => {
+      const future = item.hours.filter(time => compareTimes(time, currentFormattedTime) > 0);
+      const past = item.hours.filter(time => compareTimes(time, currentFormattedTime) <= 0);
+
+      if (future.length > 0) {
+        futureTimes.push({ ...item, hours: future });
+      }
+
+      if (past.length > 0) {
+        pastTimes.push({ ...item, hours: past });
+      }
+    });
+
+    futureTimes.sort((time1, time2) => {
+      const hour1 = getNextBusTime(time1.hours)
+      const hour2 = getNextBusTime(time2.hours)
+      return compareTimes(hour1, hour2)
+    });
+
+    pastTimes.forEach(item => {
+      item.hours.sort(compareTimes);
+    });
+
+    const orderedTimes = [...futureTimes, ...pastTimes];
+    setTimes(orderedTimes);
   }, [busStopId]);
 
-  return { times, currentTime };
+  return { times };
 };
