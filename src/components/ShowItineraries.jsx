@@ -2,14 +2,13 @@ import { Badge } from "reactstrap";
 import useItineraries from "../hooks/useItineraries";
 import { useEffect, useState } from "react";
 import useUpdateHour from "../hooks/useUpdateHour";
-import { ArrowRight, MapPin, Star } from "@phosphor-icons/react";
+import { ArrowRight, MapPin } from "@phosphor-icons/react";
 import CloseDataShow from "./CloseDataShow";
 import useNextBusTime from "../hooks/useNextBusTime";
 import ListHours from "./ListHours";
 
 function ShowItineraries() {
   const { currentItinerary } = useItineraries();
-  console.log(currentItinerary.hours[0]);
   const { getNextBusTime } = useNextBusTime();
   const [hour, setHour] = useState();
   const { upadeMinutes } = useUpdateHour();

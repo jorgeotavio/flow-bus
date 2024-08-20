@@ -10,14 +10,14 @@ const useCurrentBusStop = () => {
   const { busStops } = useBusStops()
 
   const setBusStopParam = useCallback((id) => {
-    console.log('asd',id);
     if (isEmpty(id)) {
+      searchParams.delete('itinerary');
       searchParams.set('bus-stop', id);
     } else {
       searchParams.delete('bus-stop');
     }
     setSearchParams(searchParams);
-  }, [location, stopId])
+  }, [location])
 
   const currentBusStop = useMemo(() => {
     const [filtred] = lodash.filter(busStops, stop => stop.id == stopId)

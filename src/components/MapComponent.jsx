@@ -10,7 +10,7 @@ import { iconPin, iconPinRed } from './icons';
 const MapComponent = () => {
   const { busStops } = useBusStops();
   const { setBusStopParam, currentBusStop } = useCurrentBusStop();
-  const { currentWaypoints } = useItineraries();
+  const { currentItinerary } = useItineraries();
 
   return (
     <MapContainer style={{ height: '100vh', width: '100vw' }}>
@@ -18,7 +18,7 @@ const MapComponent = () => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; OpenStreetMap contributors"
       />
-      {!currentWaypoints && busStops.map((stop, key) => (
+      {!currentItinerary && busStops.map((stop, key) => (
         <Marker
           key={key}
           eventHandlers={{

@@ -12,17 +12,17 @@ import {
 import useCurrentBusStop from "../hooks/useCurrentBusStop";
 import { isEmpty } from "lodash";
 import ModalInfo from "./ModalInfo";
+import useNextItinerary from "../hooks/useNextItinerary";
 
 const BusStopList = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const { itineraries, setItineraryParam } = useItineraries();
-  const [searchParams, setSearchParams] = useSearchParams();
-  const { currentBusStop } = useCurrentBusStop();
-  const { currentItinerary } = useItineraries();
   const location = useLocation();
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [isOpen, setIsOpen] = useState(false);
+  const { itineraries, currentItinerary, setItineraryParam } = useItineraries();
+  const { currentBusStop } = useCurrentBusStop();
+  const nextItinerary = useNextItinerary()
   const toValue = searchParams.get("to");
-  const itineraryValue = searchParams.get("itinerary");
 
   const onChangeTo = useCallback(
     (value) => {
@@ -37,9 +37,7 @@ const BusStopList = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   useEffect(() => {
-    if (!isEmpty(currentBusStop)) {
-      setIsOpen(false);
-    } else if (!isEmpty(currentItinerary)) {
+    if (!isEmpty(currentBusStop) || !isEmpty(currentItinerary)) {
       setIsOpen(false);
     } else {
       setIsOpen(true);
@@ -47,10 +45,10 @@ const BusStopList = () => {
   }, [currentItinerary, currentBusStop]);
 
   useEffect(() => {
-    if (isEmpty(toValue)) {
-      onChangeTo("Uast");
+    if (nextItinerary) {
+      setItineraryParam(nextItinerary.id)
     }
-  }, [location]);
+  }, [nextItinerary]);
 
   return (
     <div className="">
@@ -75,7 +73,7 @@ const BusStopList = () => {
           </div>
         </Col>
       </div>
-      <Collapse isOpen={isOpen} toggle={toggle}>
+      <Collapse isOpen={isOpen}>
         <div className="my-3">
           <label className="mb-2" htmlFor="">
             Para onde você vai?
@@ -129,14 +127,14 @@ const BusStopList = () => {
           </label>
           <Input
             type="select"
-            value={itineraryValue || ""}
+            value={currentItinerary ? currentItinerary.id : ""}
             onChange={onChangeDestination}
             className="cursor-pointer"
           >
             <option value="">Selecione o Itinerário</option>
             {itineraries
               .filter((i) =>
-                toValue == "Uast" ? i.to == "uast" : i.to != "uast"
+                toValue == "Uast" ? i.toStop.name == "UAST" : i.toStop.name != "UAST"
               )
               .map((iti, key) => (
                 <option key={key} value={iti.id}>

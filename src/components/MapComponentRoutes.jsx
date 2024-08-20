@@ -1,13 +1,12 @@
 import { useEffect, useRef } from "react";
 import { useMap } from "react-leaflet";
 import useItineraries from "../hooks/useItineraries";
+import { iconPin, iconPinRed, iconPinUser } from "./icons";
+import useUpdateHour from "../hooks/useUpdateHour";
+import useNextBusTime from "../hooks/useNextBusTime";
 import 'leaflet-routing-machine/dist/leaflet-routing-machine.css';
 import L from 'leaflet';
 import 'leaflet-routing-machine';
-import { iconPin, iconPinRed, iconPinUser } from "./icons";
-import { isEmpty } from "lodash";
-import useUpdateHour from "../hooks/useUpdateHour";
-import useNextBusTime from "../hooks/useNextBusTime";
 
 function MapComponentBaseRoutes() {
   const map = useMap();
@@ -15,7 +14,6 @@ function MapComponentBaseRoutes() {
   const mapRoutingControlRef = useRef(null)
   const { upadeMinutes } = useUpdateHour();
   const { getNextBusTime } = useNextBusTime();
-
 
   useEffect(() => {
     if (currentItinerary && currentItinerary.waypoints.length > 0) {
@@ -29,8 +27,6 @@ function MapComponentBaseRoutes() {
           styles: [{ color: '#083FA6', weight: 4 }]
         },
         createMarker: function (i, wp) {
-          console.log(wp);
-
           return L.marker(wp.latLng, {
             draggable: false,
             icon: i === 0 ? iconPinUser : i === currentWaypoints.length - 1 ? iconPinRed : iconPin

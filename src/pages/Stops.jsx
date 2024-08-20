@@ -28,10 +28,10 @@ const Stops = () => {
         <Col className="fixed-bottom p-2 mx-auto" xs="12" md="7">
           <Card>
             <CardBody>
-              {currentItinerary ? (
-                <ShowItineraries />
+              {currentBusStop ? (
+                 <ShowStopData />
               ) : (
-                currentBusStop && <ShowStopData />
+                currentItinerary && <ShowItineraries />
               )}
             </CardBody>
           </Card>

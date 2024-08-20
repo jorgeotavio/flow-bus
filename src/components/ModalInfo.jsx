@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Modal, ModalBody, ModalHeader } from "reactstrap";
+import { Modal, ModalBody, ModalHeader } from "reactstrap";
 import { Info } from "@phosphor-icons/react";
 
 const ModalInfo = ({ description }) => {
@@ -10,13 +10,14 @@ const ModalInfo = ({ description }) => {
   };
 
   return [
-    <span className="cursor-pointer mx-2 text-muted" onClick={toggle}>
+    <span className="cursor-pointer mx-2 text-muted" onClick={toggle} key={'1'}>
       <Info className="mb-1" />
     </span>,
     <Modal
       isOpen={isOpen}
       centered={true}
       toggle={toggle}
+      key={'2'}
     >
       <ModalHeader toggle={toggle}>
         <p className="fs-5 mb-0">
