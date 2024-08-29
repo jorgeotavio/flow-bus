@@ -1,8 +1,9 @@
-# React + Vite
+# Flow Bus
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application was created to improve information about bus stops and times that go to UAST-UFRPE.
 
-Currently, two official plugins are available:
+Created in Vitejs with Reactjs, to start, run `npm install`, after `npm run dev`.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Author
+| [<img src="https://avatars.githubusercontent.com/jorgeotavio?s=115"><br><sub>Jorge Otávio</sub>](https://github.com/jorgeotavio) |
+| :---: |
