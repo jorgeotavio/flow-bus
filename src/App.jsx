@@ -18,9 +18,7 @@ const router = createBrowserRouter([
     path: "/about",
     element: <About />,
   }
-], {
-  basename: '/flow-bus/'
-});
+]);
 
 const App = () => {
   return (

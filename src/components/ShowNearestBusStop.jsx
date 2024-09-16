@@ -12,7 +12,6 @@ const ShowNearestBusStop = () => {
   const nearestBusStop = useNearestBusStop();
   const { hasGeoPermission } = useUserCurrentPosition()
   const [showTips, setShowTips] = usePersistentState('show-bus-stop-tips', true)
-  const chekRef = useRef(null)
 
   const toggle = () => {
     setIsOpen(!isOpen)
@@ -22,7 +21,7 @@ const ShowNearestBusStop = () => {
     searchParams.set('bus-stop', nearestBusStop.id)
     setSearchParams(searchParams)
     toggle()
-  })
+  }, [nearestBusStop])
 
   return (
     <Modal isOpen={isOpen && showTips && hasGeoPermission} centered={true} toggle={toggle}>

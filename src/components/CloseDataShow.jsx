@@ -1,6 +1,6 @@
 import { X } from "@phosphor-icons/react";
 import { useCallback } from "react";
-import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
 
 const CloseDataShow = ( ) => {
   const [searchParams, setSearchParams] = useSearchParams();

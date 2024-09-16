@@ -138,7 +138,7 @@ const BusStopList = () => {
               )
               .map((iti, key) => (
                 <option key={key} value={iti.id}>
-                  {iti.fromStop.name} -- {iti.toStop.name}
+                  {iti.fromStop.name} - {iti.toStop.name}
                 </option>
               ))}
           </Input>
