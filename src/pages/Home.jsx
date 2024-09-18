@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardBody, Col } from "reactstrap";
 import { ArrowRight, Info, MapPin, Van } from "@phosphor-icons/react";
 import { useNavigate } from "react-router-dom";
+import TipModal from "../components/TipModal";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -28,7 +29,7 @@ const Home = () => {
                     <CardBody className="d-flex align-items-center justify-content-between">
                       <div className="d-flex align-items-center">
                         <Van size={24} />
-                        <div className="ms-4">Mostrar os pontos</div>
+                        <div className="ms-4">Pontos e Itinerários</div>
                       </div>
                       <ArrowRight size={24} />
                     </CardBody>
@@ -64,6 +65,7 @@ const Home = () => {
           Imagem de freepik
         </a>
       </Col>
+      <TipModal isOpen={true} toggle={() => {}}></TipModal>
     </div>
   );
 };
