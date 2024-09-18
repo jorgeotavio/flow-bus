@@ -52,7 +52,7 @@ const BusStopList = () => {
 
   return (
     <div className="">
-      <div className="d-flex align-items-center justify-content-between">
+      <div className="d-flex align-items-center justify-content-between" onClick={toggle} >
         <Col>
           <span className="me-2 cursor-pointer" onClick={() => navigate("/")}>
             <ArrowLeft className="me-2" size={16} />
@@ -69,7 +69,7 @@ const BusStopList = () => {
         </Col>
         <Col className="text-end">
           <div className="cursor-pointer">
-            <CaretDown size={24} onClick={toggle} />
+            <CaretDown size={24} />
           </div>
         </Col>
       </div>

@@ -26,13 +26,16 @@ const ShowStopData = () => {
       <div className="d-flex justify-content-between mb-4 mb-lg-4">
         <p className="d-flex align-items-center fw-bold mb-0">
           <MapPinLine className="me-2" size={22} />
+          <div className="pe-4">
+
           Partindo {pred[currentBusStop.gender]} {currentBusStop.name}
           <ModalInfo
             description={
               "Nessa listagem estão todos as próximas saídas de ônibus no ponto " +
               currentBusStop.name
             }
-          />
+            />
+          </div>
         </p>
         <CloseDataShow />
       </div>

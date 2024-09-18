@@ -10,7 +10,7 @@ const ModalInfo = ({ description }) => {
   };
 
   return [
-    <span className="cursor-pointer mx-2 text-muted" onClick={toggle} key={'1'}>
+    <span className="cursor-pointer ms-1 mt-1 text-muted d-inline" onClick={toggle} key={'1'}>
       <Info className="mb-1" />
     </span>,
     <Modal

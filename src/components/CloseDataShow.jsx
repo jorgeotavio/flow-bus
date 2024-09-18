@@ -14,7 +14,7 @@ const CloseDataShow = ( ) => {
 
   return (
     <div className="d-flex alig-items-center cursor-pointer" onClick={close}>
-      <X size={16} />
+      <X size={24} weight="bold" color="var(--bs-danger)" />
     </div>
   )
 }
