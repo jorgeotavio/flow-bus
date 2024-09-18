@@ -1,16 +1,25 @@
-import { HandWaving, MapTrifold, Warning } from "@phosphor-icons/react";
-import React, { useState } from "react";
+import { HandPeace, HandWaving, MapTrifold, Warning } from "@phosphor-icons/react";
+import React, { useCallback, useState } from "react";
+import { useLocation, useSearchParams } from "react-router-dom";
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from "reactstrap";
 
 const TipModal = () => {
-  const [isOpen, setIsOpen] = useState(true)
+  const location = useLocation()
+  const [searchParams, setSearchParams] = useSearchParams();
+  const isOpen = searchParams.get("open-modal-tips");
 
-  const toggle = () => setIsOpen(!isOpen)
+  const toggle = useCallback(
+    () => {
+      searchParams.delete("open-modal-tips");
+      setSearchParams(searchParams);
+    },
+    [location]
+  );
 
   const tips = [
     {
       Icon: <HandWaving color="var(--bs-primary)" size={86} />,
-      title: "Olá, bem-vindo!",
+      title: "Olá, boas-vindas!",
       Text: <p>Sou o <b>Flow Bus</b>, estou aqui para facilitar sua vida quando precisar saber os horários e pontos dos ônibus da UAST.</p>
     },
     {
@@ -34,9 +43,19 @@ const TipModal = () => {
       Text: <p>Mostro também! {'🤭'} </p>
     },
     {
-      Icon: <MapTrifold color="var(--bs-warning)" size={86} />,
+      image: '/assets/tip-ponto.png',
       title: "Pontos de ônibus",
       Text: <p>Quando os pontos estão listados, você pode clicar em um deles para ter mais informações {'😉'}.</p>
+    },
+    {
+      image: '/assets/tip-ponto-proximo.png',
+      title: "E o ponto mais próximo a você?",
+      Text: <p>Mostro, se você permitir <br /> acessar sua localização atual.</p>
+    },
+    {
+      Icon: <HandPeace color="var(--bs-warning)" size={86} />,
+      title: "Agora vamos lá!",
+      Text: <p>Caso tenha alguma dúvida ou dica de implementação, mande para <a href="mailto:jorge.otavio@ufrpe.br"> jorge.otavio@ufrpe.br</a></p>
     },
   ];
 
