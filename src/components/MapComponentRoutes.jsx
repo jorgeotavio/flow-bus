@@ -7,6 +7,7 @@ import useNextBusTime from "../hooks/useNextBusTime";
 import 'leaflet-routing-machine/dist/leaflet-routing-machine.css';
 import L from 'leaflet';
 import 'leaflet-routing-machine';
+import useCurrentBusStop from "../hooks/useCurrentBusStop";
 
 function MapComponentBaseRoutes() {
   const map = useMap();
@@ -14,6 +15,7 @@ function MapComponentBaseRoutes() {
   const mapRoutingControlRef = useRef(null)
   const { upadeMinutes } = useUpdateHour();
   const { getNextBusTime } = useNextBusTime();
+  const { setBusStopParam } = useCurrentBusStop();
 
   useEffect(() => {
     if (currentItinerary && currentItinerary.waypoints.length > 0) {
@@ -34,6 +36,8 @@ function MapComponentBaseRoutes() {
             permanent: true,
             direction: 'top',
             offset: [-10, -30]
+          }).on('click', () => {
+            setBusStopParam(currentItinerary.waypoints[i].id);
           });
         }
       }).addTo(map);
