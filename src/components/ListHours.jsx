@@ -1,4 +1,4 @@
-import { Modal, ModalBody, ModalHeader } from "reactstrap";
+import { Button, Modal, ModalBody, ModalHeader } from "reactstrap";
 import useNextBusTime from "../hooks/useNextBusTime";
 import { Clock, Star, XCircle } from "@phosphor-icons/react";
 import { useState } from "react";
@@ -41,10 +41,10 @@ const ListHours = ({ hours }) => {
       {!nextTime && (
         <FinishedItineraryMessage />
       )}
-      <p className="text-primary mt-2 mb-0 fs-7" onClick={toggle}>
+      <Button className="mt-2 mb-3 fs-7 cursor-pointer" onClick={toggle} color="primary" size='sm'>
         <Clock className="mb-1 me-1" />
         Mostrar horários
-      </p>
+      </Button>
       <Modal isOpen={isOpen} toggle={toggle}>
         <ModalHeader toggle={toggle}>Horários</ModalHeader>
         <ModalBody>
